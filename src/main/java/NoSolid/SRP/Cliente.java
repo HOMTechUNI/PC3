@@ -13,7 +13,6 @@ package NoSolid.SRP;
         showEmpDetail(chalo );
 
     }
-
     private static void showEmpDetail(Empleado emp) {
         emp.displayEmpDetail();
         System.out.println("El ID del empleado es: "+ emp.generateEmpId(emp.firstName));
