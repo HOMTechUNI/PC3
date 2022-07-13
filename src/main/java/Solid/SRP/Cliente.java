@@ -2,7 +2,7 @@ package Solid.SRP;
 
 public class Cliente {
     public static void main(String[] args) {
-        System.out.println("Demostracion de SRP");
+        System.out.println("Demostracion de SRP\n");
 
         Empleado jessica = new Empleado("Jessica", "Abejita", 7.5);
         showEmpDetail(jessica);

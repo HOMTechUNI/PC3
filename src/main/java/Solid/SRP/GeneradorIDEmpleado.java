@@ -1,5 +1,4 @@
 package Solid.SRP;
-
 import java.util.Random;
 
 public class GeneradorIDEmpleado {
