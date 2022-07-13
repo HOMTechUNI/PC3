@@ -1,7 +1,7 @@
 package Solid.SRP;
 
 public class Empleado {
-    public String firstName, lastName, empId;
+    public String firstName, lastName;
     public double experienceInYears;
 
     public Empleado(String firstName, String lastName, double experience) {
@@ -11,7 +11,7 @@ public class Empleado {
     }
 
     public void displayEmpDetail() {
-        System.out.println("Nombre del empleado: " + lastName + "," + firstName);
-        System.out.println("Este empleado tiene " + experienceInYears + " años de experiencia.");
+        System.out.println("Nombre del empleado: " + lastName + ", " + firstName);
+        System.out.println("Este empleado tiene: " + experienceInYears + " años de experiencia");
     }
 }

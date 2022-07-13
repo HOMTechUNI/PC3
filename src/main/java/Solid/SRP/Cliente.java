@@ -21,6 +21,6 @@ public class Cliente {
         System.out.println("El ID del empleado es: " + GeneradorIDEmpleado.generateEmpId(emp.firstName));
 
         // Verifica el nivel laboral
-        System.out.println("Este empleado es un" + " empleado " + SeniorityChecker.checkSeniority(emp.experienceInYears));
+        System.out.println("Este empleado es un: " + "empleado " + SeniorityChecker.checkSeniority(emp.experienceInYears));
     }
 }
