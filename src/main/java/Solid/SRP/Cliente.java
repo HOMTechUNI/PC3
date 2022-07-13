@@ -18,9 +18,9 @@ public class Cliente {
         emp.displayEmpDetail();
 
         //Genera el ID
-        System.out.println("El ID del empleado es: " + GeneradorIDEmpleado.generateEmpId(emp.firstName));
+        System.out.println("El ID del empleado es:\t" + GeneradorIDEmpleado.generateEmpId(emp.firstName));
 
         // Verifica el nivel laboral
-        System.out.println("Este empleado es un: " + "empleado " + SeniorityChecker.checkSeniority(emp.experienceInYears));
+        System.out.println("Este empleado es un:\t" + "Empleado " + SeniorityChecker.checkSeniority(emp.experienceInYears));
     }
 }
