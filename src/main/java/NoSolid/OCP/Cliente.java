@@ -16,7 +16,8 @@ public class Cliente {
 
         System.out.println("Distinciones:");
         DistinctionDecider distinctionDecider = new DistinctionDecider();
-        // Evalua las distinciones
+        //  Evalua las distinciones
+
         for(Estudiante estudiante:enrolledStudents){
             distinctionDecider.evaluateDistinction(estudiante);
         }
