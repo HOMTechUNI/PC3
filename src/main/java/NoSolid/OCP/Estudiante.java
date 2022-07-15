@@ -1,6 +1,6 @@
 package NoSolid.OCP;
 
-public class Estudiante {
+/*public class Estudiante {
     String name;
     String regNumber;
     String department;
@@ -19,3 +19,4 @@ public class Estudiante {
                 + score + "\n*******");
     }
 }
+*/
