@@ -12,7 +12,7 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 
-#### Pregunta 3
+#### Pregunta 3 [[Overglitch](https://github.com/Overglitch)]
 
 Modifica la clase Empleado. Agrega dos clases **SeniorityChecker** que contiene el
 método **checkSeniority()** y la clase **GeneradorIDEmpleado** contiene el método
@@ -22,6 +22,7 @@ método estático **showEmpDetail(...)**. Este método llama al método **displa
 Empleado, al método generateEmpId() de GeneradorIDEmpleado y al método **checkSeniority()**
 de **SeniorityChecker**. Tú entiendes que este método no era necesario, pero hace que el código
 del cliente sea simple y fácilmente comprensible.
+
 
 #### Pregunta 4
 
@@ -267,6 +268,8 @@ adaptarse al cambio. El **ISP** sugiere que evites este tipo de situaciones.
 En este contexto, Cuando lanzas la excepción e intentas usar código polimórfico de manera
 incorrecta, ves el impacto de violar el **LSP**. Una vez que modificas **Impresora**, también viola el
 **OCP**.
+
+##### Respuesta
 
 #### Pregunta 24
 
