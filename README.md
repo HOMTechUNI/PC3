@@ -23,6 +23,49 @@ Empleado, al método generateEmpId() de GeneradorIDEmpleado y al método **check
 de **SeniorityChecker**. Tú entiendes que este método no era necesario, pero hace que el código
 del cliente sea simple y fácilmente comprensible.
 
+<details>
+  <summary><b style="color: red">Respuesta</b></summary>
+<ul>
+  <li> Implementación de la clase <b style="color: darkorange">SeniorityChecker</b> con el método <b style="color: khaki">checkSeniority( )</b> </li>
+
+```java
+public class SeniorityChecker {
+    // completar
+    public static String checkSeniority(double experienceInYears) {
+        return experienceInYears >= 5 ? "Senior" : "Junior";
+    }
+}
+```
+
+  <li> Implementación de la clase <b style="color: darkorange">GeneradorIDEmpleado</b> con el método <b style="color: khaki">generateEmpId( ... )</b> </li>
+
+```java
+public class GeneradorIDEmpleado {
+    //completar
+    public static String generateEmpId(String empFirstName) {
+        int random = new Random().nextInt(1000);
+        return empFirstName.substring(0, 1) + random;
+    }
+}
+```
+
+  <li> Accediendo a los métodos antes mencionados mediante el método <b style="color: khaki">showEmpDetail()</b> </li>
+
+```java
+    private static void showEmpDetail(Empleado emp){
+        // Muestra detalles del empleado
+        emp.displayEmpDetail();
+
+        //Genera el ID
+        System.out.println("El ID del empleado es:\t"+GeneradorIDEmpleado.generateEmpId(emp.firstName));
+
+        // Verifica el nivel laboral
+        System.out.println("Este empleado es un:\t"+"Empleado "+SeniorityChecker.checkSeniority(emp.experienceInYears));
+        }
+```
+
+</ul>
+</details>
 
 #### Pregunta 4
 
@@ -279,12 +322,12 @@ polimórfico:
 ```java
 Impresora impresora=new ImpresoraAvanzada();
 
-impresora.printDocument();
-impresora.sendFax();
+        impresora.printDocument();
+        impresora.sendFax();
 
-impresora=new ImpresoraBasica();
+        impresora=new ImpresoraBasica();
 
-impresora.printDocument();
+        impresora.printDocument();
 //impresora .sendFax();
 ```
 
@@ -293,12 +336,12 @@ Además, no puedes escribir algo como
 ```java
 List<Impresora> impresoras=new ArrayList<Impresora>();
 
-impresoras.add(new ImpresoraAvanzada());
-impresoras.add(new ImpresoraBasica());
+        impresoras.add(new ImpresoraAvanzada());
+        impresoras.add(new ImpresoraBasica());
 
-for(Impresora dispositivo:impresoras){.printDocument();
-    // dispositivo.sendFax();
-}
+        for(Impresora dispositivo:impresoras){.printDocument();
+        // dispositivo.sendFax();
+        }
 ```
 
 En ambos casos, verás excepciones de tiempo de ejecución.
@@ -309,8 +352,8 @@ Reemplaza el segmento de código
 
 ```java
 for(Impresora dispositivo:impresoras){.printDocument();
-    // dispositivo.sendFax();
-}
+        // dispositivo.sendFax();
+        }
 ```
 
 Con una expresión lambda adecuada. Tú eliges cuál quieres usar.
