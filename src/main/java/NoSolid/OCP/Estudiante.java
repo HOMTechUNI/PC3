@@ -14,7 +14,7 @@ package NoSolid.OCP;
     }
 
     @Override
-    public String toString() {
+    public String toString(){
         return ("Nombre: " + name + "\nNumero Regex: " + regNumber + "\nDept:" + department + "\nMarks:"
                 + score + "\n*******");
     }

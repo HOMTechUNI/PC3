@@ -1,5 +1,5 @@
 package Solid.LSP;
-/*
+
 public class Cliente {
     public static void main(String[] args) {
 
@@ -22,12 +22,10 @@ public class Cliente {
         helper.addNewPayment(guestUser1);
 
         // Recupera todos los pagos anteriores de los usuarios registrados
-        helper.showPreviousPayments();
+        //helper.showPreviousPayments();
 
         // Procesa todas las solicitudes de pago nuevos de todos los usuarios
-        helper.processNewPayments();
-
-
+        //helper.processNewPayments();
+        helper.showAllOperations(helper);
     }
 }
-*/
