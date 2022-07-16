@@ -11,7 +11,7 @@ public class Empleado {
     }
 
     public void displayEmpDetail() {
-        System.out.println("Nombre del empleado:\t" + lastName + ", " + firstName);
-        System.out.println("Este empleado tiene:\t" + experienceInYears + " años de experiencia");
+        System.out.println("Nombre del empleado:\t" + firstName + ", " + lastName);
+        System.out.println("Este empleado tiene:\t" + experienceInYears + " años de experiencia" );
     }
 }
