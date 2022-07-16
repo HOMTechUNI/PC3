@@ -2,7 +2,51 @@
 
 ## Práctica Calificada 3
 
-### Principio de responsabilidad única
+**TABLA DE CONTENIDO**
+
+- [Principio de responsabilidad única](https://github.com/HOMTechUNI/PC3#principio-de-responsabilidad-%C3%BAnica)
+    - [Pregunta 1](https://github.com/HOMTechUNI/PC3#pregunta-1)
+    - [Pregunta 2](https://github.com/HOMTechUNI/PC3#pregunta-2)
+    - [Pregunta 3](https://github.com/HOMTechUNI/PC3#pregunta-3--overglitch-)
+    - [Pregunta 4](https://github.com/HOMTechUNI/PC3#pregunta-4--overglitch-)
+- [Principio abierto/cerrado](https://github.com/HOMTechUNI/PC3#principio-abiertocerrado)
+    - [Pregunta 5](https://github.com/HOMTechUNI/PC3#pregunta-5)
+    - [Pregunta 6](https://github.com/HOMTechUNI/PC3#pregunta-6)
+    - [Pregunta 7](https://github.com/HOMTechUNI/PC3#pregunta-7)
+    - [Pregunta 8](https://github.com/HOMTechUNI/PC3#pregunta-8)
+    - [Pregunta 9](https://github.com/HOMTechUNI/PC3#pregunta-9)
+    - [Pregunta 10](https://github.com/HOMTechUNI/PC3#pregunta-10)
+    - [Pregunta 11](https://github.com/HOMTechUNI/PC3#pregunta-11)
+- [Principio de sustitución de Liskov](https://github.com/HOMTechUNI/PC3#principio-de-sustituci%C3%B3n-de-liskov)
+    - [Pregunta 12](https://github.com/HOMTechUNI/PC3#pregunta-12)
+    - [Pregunta 13](https://github.com/HOMTechUNI/PC3#pregunta-13)
+    - [Pregunta 14](https://github.com/HOMTechUNI/PC3#pregunta-14)
+    - [Pregunta 15](https://github.com/HOMTechUNI/PC3#pregunta-15)
+    - [Pregunta 16](https://github.com/HOMTechUNI/PC3#pregunta-16)
+    - [Pregunta 17](https://github.com/HOMTechUNI/PC3#pregunta-17)
+    - [Pregunta 18](https://github.com/HOMTechUNI/PC3#pregunta-18)
+- [Principio de segregación de interfaces](https://github.com/HOMTechUNI/PC3#principio-de-segregaci%C3%B3n-de-interfaces)
+    - [Pregunta 19](https://github.com/HOMTechUNI/PC3#pregunta-19)
+    - [Pregunta 20](https://github.com/HOMTechUNI/PC3#pregunta-20)
+    - [Pregunta 21](https://github.com/HOMTechUNI/PC3#pregunta-21)
+    - [Pregunta 22](https://github.com/HOMTechUNI/PC3#pregunta-22)
+    - [Pregunta 23](https://github.com/HOMTechUNI/PC3#pregunta-23)
+    - [Pregunta 24](https://github.com/HOMTechUNI/PC3#pregunta-24)
+    - [Pregunta 25](https://github.com/HOMTechUNI/PC3#pregunta-25)
+    - [Pregunta 26](https://github.com/HOMTechUNI/PC3#pregunta-26)
+    - [Pregunta 27](https://github.com/HOMTechUNI/PC3#pregunta-27)
+    - [Pregunta 28](https://github.com/HOMTechUNI/PC3#pregunta-28)
+    - [Pregunta 29](https://github.com/HOMTechUNI/PC3#pregunta-29)
+    - [Pregunta 30](https://github.com/HOMTechUNI/PC3#pregunta-30)
+- [Principio de inversión de dependencias](https://github.com/HOMTechUNI/PC3#principio-de-inversi%C3%B3n-de-dependencia)
+    - [Pregunta 31](https://github.com/HOMTechUNI/PC3#pregunta-31)
+    - [Pregunta 32](https://github.com/HOMTechUNI/PC3#pregunta-32)
+    - [Pregunta 33](https://github.com/HOMTechUNI/PC3#pregunta-33)
+    - [Pregunta 34](https://github.com/HOMTechUNI/PC3#pregunta-34)
+    - [Pregunta 35](https://github.com/HOMTechUNI/PC3#pregunta-35)
+    - [Pregunta 36](https://github.com/HOMTechUNI/PC3#pregunta-36)
+
+### [Principio de responsabilidad única](https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica)
 
 #### Pregunta 1
 
@@ -67,7 +111,7 @@ public class GeneradorIDEmpleado {
 </ul>
 </details>
 
-#### Pregunta 4
+#### Pregunta 4 [ [@Overglitch](https://github.com/Overglitch) ]
 
 Realiza una demostración completa que sigue a SRP. Explica tus resultados
 
@@ -97,16 +141,21 @@ El ID del empleado es:	C941
 Este empleado es un:	Empleado Junior
 ```
 
-Luego de la implementación de clases, la salida es básicamente la misma. Hay un cambio significativo en cómo se obtienen los datos y cómo la clase Cliente los usa.
+Luego de la implementación de clases, la salida es básicamente la misma. Hay un cambio significativo en cómo se obtienen
+los datos y cómo la clase Cliente los usa.
 
-En primer lugar, se imprimen los nombres y los años de experiencia del mismo modo en el que se imprimían antes de implementar el principio de Responsabilidad única. Para obtener el ID del empleado se implementó un método generateEmpId dentro de la clase GeneradorIDEmpleado que se encarga de otorgar el ID después de solicitar el firstName del empleado. Luego se evalúa la experiencia del empleado con el método checkSeniority dentro de la clase SeniorityChecker que solicita los años de experiencia del empleado e imprime Senior si es mayor o igual a 5 y Junior en caso contrario.
+En primer lugar, se imprimen los nombres y los años de experiencia del mismo modo en el que se imprimían antes de
+implementar el principio de Responsabilidad única. Para obtener el ID del empleado se implementó un método generateEmpId
+dentro de la clase GeneradorIDEmpleado que se encarga de otorgar el ID después de solicitar el firstName del empleado.
+Luego se evalúa la experiencia del empleado con el método checkSeniority dentro de la clase SeniorityChecker que
+solicita los años de experiencia del empleado e imprime Senior si es mayor o igual a 5 y Junior en caso contrario.
 
-Estos cambios hicieron que el código se vea más limpio y accesible a la integración de nuevas funcionalidades sin alterar las implementadas.
+Estos cambios hicieron que el código se vea más limpio y accesible a la integración de nuevas funcionalidades sin
+alterar las implementadas.
 </ul>
 </details>
 
-
-### Principio abierto/cerrado
+### [Principio abierto/cerrado](https://es.wikipedia.org/wiki/Principio_de_abierto/cerrado)
 
 #### Pregunta 5
 
@@ -160,6 +209,20 @@ Debes abordar el método de evaluación para la distinción de una mejor manera.
 Por lo tanto, crea la interfaz **DistinctionDecider** que contiene un método llamado
 **EvaluationDistinction**.
 
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li> Implementación de la interfaz <b>DistinctionDecider</b> con método <b>EvaluationDistinction</b> </li>
+
+```java
+public interface DistinctionDecider {
+    void evaluateDistinction(Estudiante estudiante);
+}
+```
+
+</ul>
+</details>
+
 #### Pregunta 9
 
 Completa el código de **ArtsDistinctionDecider** y **ScienceDistinctionDecider** que
@@ -188,7 +251,7 @@ Realiza una demostración completa que sigue a OCP. Explica tus resultados
 
 ¿Cuáles son las principales ventajas ahora?
 
-### Principio de sustitución de Liskov
+### [Principio de sustitución de Liskov](https://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov)
 
 #### Pregunta 12
 
@@ -275,7 +338,7 @@ refactorizar fácilmente el código del cliente usando algún método estático.
 una modificación donde utilizas un método estático para mostrar todas las solicitudes de pago
 y utilizar este método siempre que lo necesites.
 
-### Principio de segregación de interfaz
+### Principio de segregación de interfaces
 
 #### Pregunta 19
 
@@ -437,7 +500,7 @@ siguientes archivos. No olvides explicar tus resultados.
 
 ¿Qué sucede si usa un método vacío, en lugar de lanzar la excepción?
 
-### Principio de inversión de dependencia
+### [Principio de inversión de dependencia](https://es.wikipedia.org/wiki/Principio_de_inversi%C3%B3n_de_la_dependencia)
 
 #### Pregunta 31
 
