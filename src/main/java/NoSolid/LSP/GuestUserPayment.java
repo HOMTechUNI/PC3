@@ -1,9 +1,7 @@
 package NoSolid.LSP;
 
 public class GuestUserPayment implements Payment{
- // ...completa
     String name;
-
     public GuestUserPayment() {
         this.name = "guest";
     }
@@ -14,7 +12,7 @@ public class GuestUserPayment implements Payment{
     }
 
     @Override
-    public void newPayment() {
+    public void newPayment(){
         System.out.println("Procesando de "+name+ "pago actual request.");
     }
 }
