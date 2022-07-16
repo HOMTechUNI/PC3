@@ -26,7 +26,7 @@ del cliente sea simple y fácilmente comprensible.
 <details>
   <summary>Respuesta</summary>
 <ul>
-  <li> Implementación de la clase <b>SeniorityChecker</b> con el método <b>checkSeniority( )</b> </li>
+  <li> Implementación de la clase <b>SeniorityChecker</b> con el método <b>checkSeniority()</b> </li>
 
 ```java
 public class SeniorityChecker {
@@ -37,7 +37,7 @@ public class SeniorityChecker {
 }
 ```
 
-  <li> Implementación de la clase <b>GeneradorIDEmpleado</b> con el método <b>generateEmpId( ... )</b> </li>
+  <li> Implementación de la clase <b>GeneradorIDEmpleado</b> con el método <b>generateEmpId(...)</b> </li>
 
 ```java
 public class GeneradorIDEmpleado {
@@ -49,7 +49,7 @@ public class GeneradorIDEmpleado {
 }
 ```
 
-  <li> Accediendo a los métodos antes mencionados mediante el método <b style="color: khaki">showEmpDetail()</b> </li>
+  <li> Accediendo a los métodos antes mencionados mediante el método <b>showEmpDetail()</b> </li>
 
 ```java
     private static void showEmpDetail(Empleado emp){
@@ -75,6 +75,36 @@ Realiza una demostración completa que sigue a SRP. Explica tus resultados
 - **GeneradorIdEmpleado.java**
 - **SeniorityChecker.java**
 - **Cliente.java**
+
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li>Salida del código</li>
+
+```console
+Demostracion de SRP
+
+Nombre del empleado:	Jessica, Abejita
+Este empleado tiene:	7.5 años de experiencia
+El ID del empleado es:	J515
+Este empleado es un:	Empleado Senior
+
+*******
+
+Nombre del empleado:	Chalito, Smart
+Este empleado tiene:	3.2 años de experiencia
+El ID del empleado es:	C941
+Este empleado es un:	Empleado Junior
+```
+
+Luego de la implementación de clases, la salida es básicamente la misma. Hay un cambio significativo en cómo se obtienen los datos y cómo la clase Cliente los usa.
+
+En primer lugar, se imprimen los nombres y los años de experiencia del mismo modo en el que se imprimían antes de implementar el principio de Responsabilidad única. Para obtener el ID del empleado se implementó un método generateEmpId dentro de la clase GeneradorIDEmpleado que se encarga de otorgar el ID después de solicitar el firstName del empleado. Luego se evalúa la experiencia del empleado con el método checkSeniority dentro de la clase SeniorityChecker que solicita los años de experiencia del empleado e imprime Senior si es mayor o igual a 5 y Junior en caso contrario.
+
+Estos cambios hicieron que el código se vea más limpio y accesible a la integración de nuevas funcionalidades sin alterar las implementadas.
+</ul>
+</details>
+
 
 ### Principio abierto/cerrado
 
