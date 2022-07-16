@@ -56,7 +56,7 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 
-#### Pregunta 3 [ [@Overglitch](https://github.com/Overglitch) ]
+#### Pregunta 3 [[@Overglitch](https://github.com/Overglitch)]
 
 Modifica la clase Empleado. Agrega dos clases **SeniorityChecker** que contiene el
 método **checkSeniority()** y la clase **GeneradorIDEmpleado** contiene el método
@@ -111,7 +111,7 @@ public class GeneradorIDEmpleado {
 </ul>
 </details>
 
-#### Pregunta 4 [ [@Overglitch](https://github.com/Overglitch) ]
+#### Pregunta 4 [[@Overglitch](https://github.com/Overglitch)]
 
 Realiza una demostración completa que sigue a SRP. Explica tus resultados
 
