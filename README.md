@@ -12,7 +12,7 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 
-#### Pregunta 3 [[Overglitch](https://github.com/Overglitch)]
+#### Pregunta 3 [ [@Overglitch](https://github.com/Overglitch) ]
 
 Modifica la clase Empleado. Agrega dos clases **SeniorityChecker** que contiene el
 método **checkSeniority()** y la clase **GeneradorIDEmpleado** contiene el método
@@ -24,9 +24,9 @@ de **SeniorityChecker**. Tú entiendes que este método no era necesario, pero h
 del cliente sea simple y fácilmente comprensible.
 
 <details>
-  <summary><b style="color: red">Respuesta</b></summary>
+  <summary>Respuesta</summary>
 <ul>
-  <li> Implementación de la clase <b style="color: darkorange">SeniorityChecker</b> con el método <b style="color: khaki">checkSeniority( )</b> </li>
+  <li> Implementación de la clase <b>SeniorityChecker</b> con el método <b>checkSeniority( )</b> </li>
 
 ```java
 public class SeniorityChecker {
@@ -37,7 +37,7 @@ public class SeniorityChecker {
 }
 ```
 
-  <li> Implementación de la clase <b style="color: darkorange">GeneradorIDEmpleado</b> con el método <b style="color: khaki">generateEmpId( ... )</b> </li>
+  <li> Implementación de la clase <b>GeneradorIDEmpleado</b> con el método <b>generateEmpId( ... )</b> </li>
 
 ```java
 public class GeneradorIDEmpleado {
