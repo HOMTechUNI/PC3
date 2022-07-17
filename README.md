@@ -2,7 +2,7 @@
 
 ## Práctica Calificada 3
 
-<div style="text-align: center;"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg"></div>
+<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg"></a></div>
 
 **TABLA DE CONTENIDO**
 
