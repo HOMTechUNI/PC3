@@ -1,6 +1,6 @@
 package NoSolid.OCP;
 
-public class Estudiante {
+/*public class Estudiante {
     String name;
     String regNumber;
     String department;
@@ -18,4 +18,4 @@ public class Estudiante {
         return ("Nombre: " + name + "\nNumero Regex: " + regNumber + "\nDept:" + department + "\nMarks:"
                 + score + "\n*******");
     }
-}
+}*/
