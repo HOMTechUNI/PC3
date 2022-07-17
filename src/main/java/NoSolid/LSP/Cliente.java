@@ -23,6 +23,5 @@ public class Cliente {
         // Encuentras algun problema?
         helper.showPreviousPayments();
         helper.processNewPayments();
-
     }
 }

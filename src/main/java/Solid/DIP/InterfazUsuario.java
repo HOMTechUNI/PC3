@@ -1,6 +1,13 @@
 package Solid.DIP;
 /*
 class InterfazUsuario {
-  ...completa
+  private BaseDatos baseDatos;
+
+  public InterfazUsuario(BaseDatos baseDatos) {
+      this.baseDatos= baseDatos;
+  }
+  public void saveEmployeeId(String empId) {
+      baseDatos.saveEmpIdInDatabase(empId);
+  }
 }
 */

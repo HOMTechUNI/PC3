@@ -1,7 +1,5 @@
 package NoSolid.ISP;
 
-/*
 interface  Fax {
-...completa
+    void sendFax();
 }
-*/

@@ -26,6 +26,10 @@ public class Cliente {
 
         // Procesa todas las solicitudes de pago nuevos de todos los usuarios
         //helper.processNewPayments();
+
+        //Muestra todas las operaciones que se realizan actualmente
+        //*Recuperación de pagos anteriores
+        //*Procesamiento de pagos nuevos
         helper.showAllOperations(helper);
     }
 }
