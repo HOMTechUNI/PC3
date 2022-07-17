@@ -1,7 +1,9 @@
 # Curso de desarrollo de software
 
 ## Práctica Calificada 3
-<div style="text-align: center;"><img src="https://forthebadge.com/images/badges/fuck-it-ship-it.svg"></div>
+
+<div style="text-align: center;"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg"></div>
+
 **TABLA DE CONTENIDO**
 
 - [Principio de responsabilidad única](https://github.com/HOMTechUNI/PC3#principio-de-responsabilidad-%C3%BAnica)
