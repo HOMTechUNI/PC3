@@ -56,42 +56,42 @@ Muestra la salida y explica los resultados en función de los métodos entregado
   <summary>Respuesta</summary>
 
 <ul>
+
 ```console
 Demostracion sin SRP
-Nombre del empleado: Abejita,Jessica
+Nombre del empleado: Abejita, Jessica
 Este empleado tiene 7.5 años de experiencia.
 El ID del empleado es: J711
 Este empleado es un empleado senior
 
 ----
 
-Nombre del empleado: Smart,Chalito
+Nombre del empleado: Smart, Chalito
 Este empleado tiene 3.2 años de experiencia.
 El ID del empleado es: C216
 Este empleado es un empleado junior
 ```
 
-  La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados ,de Jessica Abejita
-  y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un métodos llamado
-  showEmplDetails() cullo parámetro emp es un objeto de clase Empleado, primo muestra la identificación
-  emp con  el método displayEmpDetail(), el cual muestra el nombre y apellido del empleado más los
-  años de experiencia laboral que tiene, luego  imprime el id del empleado usando el método del
-  emp llamado generateEmptId()  el cual genera un id aleatorio con la primera letra del nombre del
-  empleado concatenado con un número aleatorio menor a 1000,finalmente imprime si el empleado es senior
-   o un junior usando el método checkSenioriti() de emp, el cual comprobará si es que el empleado tiene
-  más de 5 años de experiencia para que el método imprima “senior”  , si no es así imprimirá “junior”.
+<li>
+La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados ,de Jessica Abejita
+y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un métodos llamado
+showEmplDetails() cullo parámetro emp es un objeto de clase Empleado, primo muestra la identificación
+emp con el método displayEmpDetail(), el cual muestra el nombre y apellido del empleado más los
+años de experiencia laboral que tiene, luego imprime el id del empleado usando el método del
+emp llamado generateEmptId()  el cual genera un id aleatorio con la primera letra del nombre del
+empleado concatenado con un número aleatorio menor a 1000,finalmente imprime si el empleado es senior
+o un junior usando el método checkSenioriti() de emp, el cual comprobará si es que el empleado tiene
+más de 5 años de experiencia para que el método imprima “senior” , si no es así imprimirá “junior”.
 
-
-
-  En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual se instancia con 
-  nombre “Jessica”, apellido “Abejita” y con 7.5 años de experiencia  por lo que al momento de imprimir
-  sus datos su id iniciará con el carácter J y se imprimirá que es una empleada senior por tener más
-  de 5 años de experiencia, después  se crea un objeto Empleado llamado chalo, el cual se instancia
-  con nombre “Chalito”, apellido “Smart” y con 3.2 años de experiencia  por lo que al momento de imprimir
+En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual se instancia con
+nombre “Jessica”, apellido “Abejita” y con 7.5 años de experiencia por lo que al momento de imprimir
+sus datos su id iniciará con el carácter J y se imprimirá que es una empleada senior por tener más
+de 5 años de experiencia, después se crea un objeto Empleado llamado chalo, el cual se instancia
+con nombre “Chalito”, apellido “Smart” y con 3.2 años de experiencia por lo que al momento de imprimir
 sus datos su id iniciará con el carácter C y se imprimirá que es una empleada junior por tener más
-  de 5 años de experiencia.
-
-<ul>
+de 5 años de experiencia.
+</li>
+</ul>
 </details>
 
 #### Pregunta 2
@@ -230,16 +230,14 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 
 <details>
   <summary>Respuesta</summary>
-<ul>
+
 ```console
-
-
-```
 sdsgdfsgsdfg
+```
 
-</ul>
 </details>
-#### Pregunta 7
+
+#### Pregunta 7 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 Para abordar este problema, puedes escribir un mejor programa. El OCP se puede lograr de
@@ -256,7 +254,7 @@ Entonces, en el siguiente ejemplo, haces que la clase **Estudiante** sea abstrac
 **ArteEstudiante** y **CienciaEstudiante** son las clases concretas y se utilizan para proporcionar la
 información del *"departamento"*.
 
-#### Pregunta 8
+#### Pregunta 8 [[@Overglitch](https://github.com/Overglitch)]
 
 Debes abordar el método de evaluación para la distinción de una mejor manera.
 Por lo tanto, crea la interfaz **DistinctionDecider** que contiene un método llamado
@@ -276,7 +274,7 @@ public interface DistinctionDecider {
 </ul>
 </details>
 
-#### Pregunta 9
+#### Pregunta 9 [[@Overglitch](https://github.com/Overglitch)]
 
 Completa el código de **ArtsDistinctionDecider** y **ScienceDistinctionDecider** que
 implementan esta interfaz y sobreescriben el método de **evaluateDistinction(...)** para
@@ -288,7 +286,7 @@ Debes tener en cuenta que el método de **evaluateDistinction(...)** acepta un p
 El código restante es fácil y no debería tener ningún problema para comprender la siguiente
 demostración ahora.
 
-#### Pregunta 10
+#### Pregunta 10 [[@Overglitch](https://github.com/Overglitch)]
 
 Realiza una demostración completa que sigue a OCP. Explica tus resultados
 
@@ -300,7 +298,7 @@ Realiza una demostración completa que sigue a OCP. Explica tus resultados
 - **ArtsDistinctionDecider.java**
 - **Cliente.java**
 
-#### Pregunta 11
+#### Pregunta 11 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuáles son las principales ventajas ahora?
 
@@ -515,7 +513,7 @@ Sean los siguientes archivos:
 
 Muestra la salida y explica los resultados en función de los métodos entregados.
 
-#### Pregunta 27
+#### Pregunta 27 [[@Overglitch](https://github.com/Overglitch)]
 
 Supongamos que necesitas admitir otra impresora que pueda imprimir, enviar
 faxes y fotocopiar. En este caso, si agregas un método de fotocopiado en la interfaz **Impresora**,
@@ -540,22 +538,22 @@ siguientes archivos. No olvides explicar tus resultados.
 - **ImpresoraAvanzada.java**
 - **Cliente.java**
 
-#### Pregunta 28
+#### Pregunta 28 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método predeterminado dentro de la interfaz?
 
-#### Pregunta 29
+#### Pregunta 29 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si proporcionas un método de fax predeterminado en una interfaz?
 ¡Viste el problema potencial con esto!
 
-#### Pregunta 30
+#### Pregunta 30 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método vacío, en lugar de lanzar la excepción?
 
 ### [Principio de inversión de dependencia](https://es.wikipedia.org/wiki/Principio_de_inversi%C3%B3n_de_la_dependencia)
 
-#### Pregunta 31
+#### Pregunta 31 [[@Overglitch](https://github.com/Overglitch)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
@@ -563,7 +561,7 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 - **OracleDataBase.java**
 - **Cliente.java**
 
-#### Pregunta 32
+#### Pregunta 32 [[@Overglitch](https://github.com/Overglitch)]
 
 El programa es simple, pero ¿Qué tipo de problemas presenta?
 
