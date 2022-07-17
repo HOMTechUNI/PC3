@@ -2,7 +2,7 @@
 
 ## Práctica Calificada 3
 
-<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg"></a></div>
+<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg" alt=""></a></div>
 
 **TABLA DE CONTENIDO**
 
@@ -258,7 +258,8 @@ información del *"departamento"*.
 
 <details>
   <summary>Respuesta</summary>
-<ul><li> En el caso de la clase Estudiante se viola  </li></ul>
+<ol type="a"><li> El principal problema en la clase DistinctionDecider es que el método evaluateDistinction si bien cumple su función, nos impide agregar nuevas formas de evaluar el puntaje de los alumnos sin cambiar mucho el código.</li> <li> Esto también se repite para la adición de nuevos departamentos, tampoco se podría agrupar a los estudiantes según el departamento al que pertenecen a menos que se excluyan por sus atributos propios (name, Regnum, score).
+  </li></ol>
 </details>
 
 #### Pregunta 8 [[@Overglitch](https://github.com/Overglitch)]
@@ -278,6 +279,8 @@ public interface DistinctionDecider {
 }
 ```
 
+La implementación de este método se sobreescribirá tanto en la clase ArteEstudiante como en la clase CienciaEstudiante,
+según lo que se requiera.
 </ul>
 </details>
 
@@ -293,6 +296,46 @@ Debes tener en cuenta que el método de **evaluateDistinction(...)** acepta un p
 El código restante es fácil y no debería tener ningún problema para comprender la siguiente
 demostración ahora.
 
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li> La clase <b>ArtsDistinctionDecider</b> implementa la interfaz <b>DistinctionDecider</b> sobreescribiendo el método <b>evaluateDistinction(...)</b></li>
+
+```java
+public class ArtsDistinctionDecider implements DistinctionDecider {
+
+    @Override
+    public void evaluateDistinction(Estudiante estudiante) {
+        if (estudiante.score > 70) {
+            System.out.println(estudiante.regNumber + " ha recibido una distincion en artes.");
+        }
+    }
+}
+```
+
+El método evaluateDistinction(...) recibe un objeto de tipo Estudiante y evalúa si el puntaje del estudiante es mayor a
+70 e imprime que recibió una distinción en artes en caso de ser así.
+
+<li> La clase <b>ScienceDistinctionDecider</b> implementa la interfaz <b>DistinctionDecider</b> sobreescribiendo el método <b>evaluateDistinction(...)</b></li>
+
+```java
+public class ScienceDistinctionDecider implements DistinctionDecider {
+
+    @Override
+    public void evaluateDistinction(Estudiante estudiante) {
+        if (estudiante.score > 80) {
+            System.out.println(estudiante.regNumber + " ha recibido una distincion en ciencias.");
+        }
+    }
+}
+```
+
+El método evaluateDistinction(...) recibe un objeto de tipo Estudiante y evalúa si el puntaje del estudiante es mayor a
+80 e imprime que recibió una distinción en ciencias en caso de ser así.
+
+</ul>
+</details>
+
 #### Pregunta 10 [[@Overglitch](https://github.com/Overglitch)]
 
 Realiza una demostración completa que sigue a OCP. Explica tus resultados
@@ -305,9 +348,63 @@ Realiza una demostración completa que sigue a OCP. Explica tus resultados
 - **ArtsDistinctionDecider.java**
 - **Cliente.java**
 
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li>Salida del código</li>
+
+```console
+Demostracion OCP
+
+Resultados:
+
+Nombre:		Irene
+Numero Reg:	R1
+Dept:		Ciencia de la computacion.
+Marks:		81.5
+
+Nombre:		Jessica
+Numero Reg:	R2
+Dept:		Fisica
+Marks:		72.0
+
+Nombre:		Chalo
+Numero Reg:	R3
+Dept:		Historia
+Marks:		71.0
+
+Nombre:		Claudio
+Numero Reg:	R4
+Dept:		Literatura
+Marks:		66.5
+
+Distinciones:
+
+R1 ha recibido una distincion en ciencias.
+R3 ha recibido una distincion en artes.
+```
+En primer lugar, se insertan a los estudiantes en Listas de Estudiantes dependiendo del departamento al que pertenezcan, de modo que se crean las listas: CienciasEstudiantes y ArtesEstudiantes. También debemos mencionar que la clase abstracta Estudiante que almacena los datos de los estudiantes se extiende en 2 clases: CienciaEstudiante y ArteEstudiante.
+
+Luego se evalúa los puntajes de cada estudiante para saber si posee una distinción o no, esto mediante el método sobreescrito evaluateDistinction que funciona dependiendo si el alumno es de Ciencias o Artes
+
+
+Finalmente, se imprimen los resultados.
+</ul></details>
+
 #### Pregunta 11 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuáles son las principales ventajas ahora?
+
+<details>
+  <summary>Respuesta</summary>
+<ol type="a">
+
+<li>Si quisieramos agregar otra forma de clasificar a los alumnos, solo sería necesario extender la clase Estudiante tal como se hizo con ArteEstudiante y CienciaEstudiante</li>
+
+<li>A su vez para evaluar a dichos alumnos de una manera alternativa bastaría con crear clases que implementen la interfaz DistinctionDecider</li> </ol>
+
+Esto fue posible gracias al buen uso de la herencia y los polimorismos.
+</details> 
 
 ### [Principio de sustitución de Liskov](https://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov)
 
