@@ -2,6 +2,8 @@
 
 ## Práctica Calificada 3
 
+<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg" alt=""></a></div>
+
 **TABLA DE CONTENIDO**
 
 - [Principio de responsabilidad única](https://github.com/HOMTechUNI/PC3#principio-de-responsabilidad-%C3%BAnica)
@@ -51,6 +53,48 @@
 #### Pregunta 1
 
 Muestra la salida y explica los resultados en función de los métodos entregados
+
+<details>
+  <summary>Respuesta</summary>
+
+<ul>
+
+```console
+Demostracion sin SRP
+Nombre del empleado: Abejita, Jessica
+Este empleado tiene 7.5 años de experiencia.
+El ID del empleado es: J711
+Este empleado es un empleado senior
+
+----
+
+Nombre del empleado: Smart, Chalito
+Este empleado tiene 3.2 años de experiencia.
+El ID del empleado es: C216
+Este empleado es un empleado junior
+```
+
+<li>
+La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados ,de Jessica Abejita
+y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un métodos llamado
+showEmplDetails() cullo parámetro emp es un objeto de clase Empleado, primo muestra la identificación
+emp con el método displayEmpDetail(), el cual muestra el nombre y apellido del empleado más los
+años de experiencia laboral que tiene, luego imprime el id del empleado usando el método del
+emp llamado generateEmptId()  el cual genera un id aleatorio con la primera letra del nombre del
+empleado concatenado con un número aleatorio menor a 1000,finalmente imprime si el empleado es senior
+o un junior usando el método checkSenioriti() de emp, el cual comprobará si es que el empleado tiene
+más de 5 años de experiencia para que el método imprima “senior” , si no es así imprimirá “junior”.
+
+En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual se instancia con
+nombre “Jessica”, apellido “Abejita” y con 7.5 años de experiencia por lo que al momento de imprimir
+sus datos su id iniciará con el carácter J y se imprimirá que es una empleada senior por tener más
+de 5 años de experiencia, después se crea un objeto Empleado llamado chalo, el cual se instancia
+con nombre “Chalito”, apellido “Smart” y con 3.2 años de experiencia por lo que al momento de imprimir
+sus datos su id iniciará con el carácter C y se imprimirá que es una empleada junior por tener más
+de 5 años de experiencia.
+</li>
+</ul>
+</details>
 
 #### Pregunta 2
 
@@ -186,7 +230,16 @@ Sean los siguientes archivos:
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
-#### Pregunta 7
+<details>
+  <summary>Respuesta</summary>
+
+```console
+sdsgdfsgsdfg
+```
+
+</details>
+
+#### Pregunta 7 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 Para abordar este problema, puedes escribir un mejor programa. El OCP se puede lograr de
@@ -203,7 +256,13 @@ Entonces, en el siguiente ejemplo, haces que la clase **Estudiante** sea abstrac
 **ArteEstudiante** y **CienciaEstudiante** son las clases concretas y se utilizan para proporcionar la
 información del *"departamento"*.
 
-#### Pregunta 8
+<details>
+  <summary>Respuesta</summary>
+<ol type="a"><li> El principal problema en la clase DistinctionDecider es que el método evaluateDistinction si bien cumple su función, nos impide agregar nuevas formas de evaluar el puntaje de los alumnos sin cambiar mucho el código.</li> <li> Esto también se repite para la adición de nuevos departamentos, tampoco se podría agrupar a los estudiantes según el departamento al que pertenecen a menos que se excluyan por sus atributos propios (name, Regnum, score).
+  </li></ol>
+</details>
+
+#### Pregunta 8 [[@Overglitch](https://github.com/Overglitch)]
 
 Debes abordar el método de evaluación para la distinción de una mejor manera.
 Por lo tanto, crea la interfaz **DistinctionDecider** que contiene un método llamado
@@ -220,10 +279,12 @@ public interface DistinctionDecider {
 }
 ```
 
+La implementación de este método se sobreescribirá tanto en la clase ArteEstudiante como en la clase CienciaEstudiante,
+según lo que se requiera.
 </ul>
 </details>
 
-#### Pregunta 9
+#### Pregunta 9 [[@Overglitch](https://github.com/Overglitch)]
 
 Completa el código de **ArtsDistinctionDecider** y **ScienceDistinctionDecider** que
 implementan esta interfaz y sobreescriben el método de **evaluateDistinction(...)** para
@@ -235,7 +296,47 @@ Debes tener en cuenta que el método de **evaluateDistinction(...)** acepta un p
 El código restante es fácil y no debería tener ningún problema para comprender la siguiente
 demostración ahora.
 
-#### Pregunta 10
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li> La clase <b>ArtsDistinctionDecider</b> implementa la interfaz <b>DistinctionDecider</b> sobreescribiendo el método <b>evaluateDistinction(...)</b></li>
+
+```java
+public class ArtsDistinctionDecider implements DistinctionDecider {
+
+    @Override
+    public void evaluateDistinction(Estudiante estudiante) {
+        if (estudiante.score > 70) {
+            System.out.println(estudiante.regNumber + " ha recibido una distincion en artes.");
+        }
+    }
+}
+```
+
+El método evaluateDistinction(...) recibe un objeto de tipo Estudiante y evalúa si el puntaje del estudiante es mayor a
+70 e imprime que recibió una distinción en artes en caso de ser así.
+
+<li> La clase <b>ScienceDistinctionDecider</b> implementa la interfaz <b>DistinctionDecider</b> sobreescribiendo el método <b>evaluateDistinction(...)</b></li>
+
+```java
+public class ScienceDistinctionDecider implements DistinctionDecider {
+
+    @Override
+    public void evaluateDistinction(Estudiante estudiante) {
+        if (estudiante.score > 80) {
+            System.out.println(estudiante.regNumber + " ha recibido una distincion en ciencias.");
+        }
+    }
+}
+```
+
+El método evaluateDistinction(...) recibe un objeto de tipo Estudiante y evalúa si el puntaje del estudiante es mayor a
+80 e imprime que recibió una distinción en ciencias en caso de ser así.
+
+</ul>
+</details>
+
+#### Pregunta 10 [[@Overglitch](https://github.com/Overglitch)]
 
 Realiza una demostración completa que sigue a OCP. Explica tus resultados
 
@@ -247,9 +348,63 @@ Realiza una demostración completa que sigue a OCP. Explica tus resultados
 - **ArtsDistinctionDecider.java**
 - **Cliente.java**
 
-#### Pregunta 11
+<details>
+  <summary>Respuesta</summary>
+<ul>
+    <li>Salida del código</li>
+
+```console
+Demostracion OCP
+
+Resultados:
+
+Nombre:		Irene
+Numero Reg:	R1
+Dept:		Ciencia de la computacion.
+Marks:		81.5
+
+Nombre:		Jessica
+Numero Reg:	R2
+Dept:		Fisica
+Marks:		72.0
+
+Nombre:		Chalo
+Numero Reg:	R3
+Dept:		Historia
+Marks:		71.0
+
+Nombre:		Claudio
+Numero Reg:	R4
+Dept:		Literatura
+Marks:		66.5
+
+Distinciones:
+
+R1 ha recibido una distincion en ciencias.
+R3 ha recibido una distincion en artes.
+```
+En primer lugar, se insertan a los estudiantes en Listas de Estudiantes dependiendo del departamento al que pertenezcan, de modo que se crean las listas: CienciasEstudiantes y ArtesEstudiantes. También debemos mencionar que la clase abstracta Estudiante que almacena los datos de los estudiantes se extiende en 2 clases: CienciaEstudiante y ArteEstudiante.
+
+Luego se evalúa los puntajes de cada estudiante para saber si posee una distinción o no, esto mediante el método sobreescrito evaluateDistinction que funciona dependiendo si el alumno es de Ciencias o Artes
+
+
+Finalmente, se imprimen los resultados.
+</ul></details>
+
+#### Pregunta 11 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuáles son las principales ventajas ahora?
+
+<details>
+  <summary>Respuesta</summary>
+<ol type="a">
+
+<li>Si quisieramos agregar otra forma de clasificar a los alumnos, solo sería necesario extender la clase Estudiante tal como se hizo con ArteEstudiante y CienciaEstudiante</li>
+
+<li>A su vez para evaluar a dichos alumnos de una manera alternativa bastaría con crear clases que implementen la interfaz DistinctionDecider</li> </ol>
+
+Esto fue posible gracias al buen uso de la herencia y los polimorismos.
+</details> 
 
 ### [Principio de sustitución de Liskov](https://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov)
 
@@ -462,7 +617,7 @@ Sean los siguientes archivos:
 
 Muestra la salida y explica los resultados en función de los métodos entregados.
 
-#### Pregunta 27
+#### Pregunta 27 [[@Overglitch](https://github.com/Overglitch)]
 
 Supongamos que necesitas admitir otra impresora que pueda imprimir, enviar
 faxes y fotocopiar. En este caso, si agregas un método de fotocopiado en la interfaz **Impresora**,
@@ -487,22 +642,22 @@ siguientes archivos. No olvides explicar tus resultados.
 - **ImpresoraAvanzada.java**
 - **Cliente.java**
 
-#### Pregunta 28
+#### Pregunta 28 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método predeterminado dentro de la interfaz?
 
-#### Pregunta 29
+#### Pregunta 29 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si proporcionas un método de fax predeterminado en una interfaz?
 ¡Viste el problema potencial con esto!
 
-#### Pregunta 30
+#### Pregunta 30 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método vacío, en lugar de lanzar la excepción?
 
 ### [Principio de inversión de dependencia](https://es.wikipedia.org/wiki/Principio_de_inversi%C3%B3n_de_la_dependencia)
 
-#### Pregunta 31
+#### Pregunta 31 [[@Overglitch](https://github.com/Overglitch)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
@@ -510,7 +665,7 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 - **OracleDataBase.java**
 - **Cliente.java**
 
-#### Pregunta 32
+#### Pregunta 32 [[@Overglitch](https://github.com/Overglitch)]
 
 El programa es simple, pero ¿Qué tipo de problemas presenta?
 

@@ -1,5 +1,5 @@
 package NoSolid.SRP;
-/*import java.util.Random;
+import java.util.Random;
 
 public class Empleado {
     public String firstName, lastName, empId;
@@ -23,4 +23,4 @@ public class Empleado {
         return empId;
     }
 
-}*/
+}

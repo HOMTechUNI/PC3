@@ -6,11 +6,10 @@ abstract class Estudiante {
     double score;
     String department;
 
-    public Estudiante(String name, String regNumber, double score, String dept) {
+    public Estudiante(String name, String regNumber, double score) {
         this.name = name;
         this.regNumber = regNumber;
         this.score = score;
-        this.department = dept;
     }
 
     public String toString() {

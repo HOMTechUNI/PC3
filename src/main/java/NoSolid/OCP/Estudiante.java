@@ -18,5 +18,4 @@ package NoSolid.OCP;
         return ("Nombre: " + name + "\nNumero Regex: " + regNumber + "\nDept:" + department + "\nMarks:"
                 + score + "\n*******");
     }
-}
-*/
+}*/
