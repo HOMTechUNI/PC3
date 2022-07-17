@@ -52,6 +52,48 @@
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
+<details>
+  <summary>Respuesta</summary>
+
+<ul>
+```console
+Demostracion sin SRP
+Nombre del empleado: Abejita,Jessica
+Este empleado tiene 7.5 años de experiencia.
+El ID del empleado es: J711
+Este empleado es un empleado senior
+
+----
+
+Nombre del empleado: Smart,Chalito
+Este empleado tiene 3.2 años de experiencia.
+El ID del empleado es: C216
+Este empleado es un empleado junior
+```
+
+  La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados ,de Jessica Abejita
+  y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un métodos llamado
+  showEmplDetails() cullo parámetro emp es un objeto de clase Empleado, primo muestra la identificación
+  emp con  el método displayEmpDetail(), el cual muestra el nombre y apellido del empleado más los
+  años de experiencia laboral que tiene, luego  imprime el id del empleado usando el método del
+  emp llamado generateEmptId()  el cual genera un id aleatorio con la primera letra del nombre del
+  empleado concatenado con un número aleatorio menor a 1000,finalmente imprime si el empleado es senior
+   o un junior usando el método checkSenioriti() de emp, el cual comprobará si es que el empleado tiene
+  más de 5 años de experiencia para que el método imprima “senior”  , si no es así imprimirá “junior”.
+
+
+
+  En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual se instancia con 
+  nombre “Jessica”, apellido “Abejita” y con 7.5 años de experiencia  por lo que al momento de imprimir
+  sus datos su id iniciará con el carácter J y se imprimirá que es una empleada senior por tener más
+  de 5 años de experiencia, después  se crea un objeto Empleado llamado chalo, el cual se instancia
+  con nombre “Chalito”, apellido “Smart” y con 3.2 años de experiencia  por lo que al momento de imprimir
+sus datos su id iniciará con el carácter C y se imprimirá que es una empleada junior por tener más
+  de 5 años de experiencia.
+
+<ul>
+</details>
+
 #### Pregunta 2
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
@@ -186,6 +228,17 @@ Sean los siguientes archivos:
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
+<details>
+  <summary>Respuesta</summary>
+<ul>
+```console
+
+
+```
+sdsgdfsgsdfg
+
+</ul>
+</details>
 #### Pregunta 7
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
