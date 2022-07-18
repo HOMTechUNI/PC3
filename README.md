@@ -2,6 +2,12 @@
 
 # Curso de desarrollo de software
 
+| NOMBRES Y APELLIDOS                    | CÓDIGO    | ALIAS      |
+|----------------------------------------|-----------|------------|
+| ***Miguel Alexander Huamani Rengifo*** | 20191403B | MiguelHRLX |
+| ***Paul Hans Murillo Dominguez***      | 20193507J | Overglitch |
+| ***Renzo Augusto Oyola Ramos***        | 20190509A | Bobter     |
+
 ## Práctica Calificada 3
 
 **TABLA DE CONTENIDO**
