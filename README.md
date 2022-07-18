@@ -224,6 +224,7 @@ class Estudiante {
 // …
 }
 ```
+
 <details>
   <summary>Respuesta</summary>
     Para el método <b>evaluateDistinction(…)</b> estaríamos violando el principio abierto/cerrado para la clase <b>DistinctionDecider</b>, al implementar este método dentro de la clase <b>Estudiante</b> tendríamos que modificar la funcionalidad de <b>DistinctionDecider</b> si lo vemos desde el punto de vista de OCP estaríamos cometiendo un gran error ya que podemos ampliar las funcionalidades de una clase pero no modificar las ya existentes. Respecto a la función <b>displayResult(…)</b> no solo estaríamos mostrando el resultado de las demás funciones de la clase <b>Estudiante</b> sino que también los resultados del decider que si bien este método estaría ampliando la funcionalidad de la clase <b>Estudiante</b> sin modificar las ya existentes al mostrar los resultados de los métodos de otra clase no estamos respetando que la otra clase pueda estar abierta a ampliaciones de sus funcionalidades.
@@ -393,10 +394,14 @@ Distinciones:
 R1 ha recibido una distincion en ciencias.
 R3 ha recibido una distincion en artes.
 ```
-En primer lugar, se insertan a los estudiantes en Listas de Estudiantes dependiendo del departamento al que pertenezcan, de modo que se crean las listas: CienciasEstudiantes y ArtesEstudiantes. También debemos mencionar que la clase abstracta Estudiante que almacena los datos de los estudiantes se extiende en 2 clases: CienciaEstudiante y ArteEstudiante.
 
-Luego se evalúa los puntajes de cada estudiante para saber si posee una distinción o no, esto mediante el método sobreescrito evaluateDistinction que funciona dependiendo si el alumno es de Ciencias o Artes
+En primer lugar, se insertan a los estudiantes en Listas de Estudiantes dependiendo del departamento al que pertenezcan,
+de modo que se crean las listas: CienciasEstudiantes y ArtesEstudiantes. También debemos mencionar que la clase
+abstracta Estudiante que almacena los datos de los estudiantes se extiende en 2 clases: CienciaEstudiante y
+ArteEstudiante.
 
+Luego se evalúa los puntajes de cada estudiante para saber si posee una distinción o no, esto mediante el método
+sobreescrito evaluateDistinction que funciona dependiendo si el alumno es de Ciencias o Artes
 
 Finalmente, se imprimen los resultados.
 </ul></details>
@@ -497,6 +502,7 @@ siguientes archivos:
 - **GuestUserPayment.java**
 - **PaymentHelper.java**
 - **Cliente.java**
+
 <details>
   <summary>Respuesta</summary>
 <ul>
@@ -504,21 +510,21 @@ siguientes archivos:
 
 ```java
 public class RegisteredUserPayment implements NewPayment, PreviousPayment {
-    
+
     String name;
-    
+
     public RegisteredUserPayment(String userName) {
         this.name = userName;
     }
-    
+
     @Override
-    public void previousPaymentInfo(){
-        System.out.println("Recuperando los ultimos detalles de pago del cliente: "+ name);
+    public void previousPaymentInfo() {
+        System.out.println("Recuperando los ultimos detalles de pago del cliente: " + name);
     }
-    
+
     @Override
-    public void newPayment(){
-        System.out.println("Procesando el pago del cliente: "+name);
+    public void newPayment() {
+        System.out.println("Procesando el pago del cliente: " + name);
     }
 }
 ```
@@ -526,17 +532,17 @@ public class RegisteredUserPayment implements NewPayment, PreviousPayment {
 <li>La clase <b>GuestUserPayment</b> quedaría de la siguiente manera:</li>
 
 ```java
-public class GuestUserPayment implements NewPayment{
-    
+public class GuestUserPayment implements NewPayment {
+
     String name;
-    
+
     public GuestUserPayment() {
         this.name = "guest";
     }
-    
+
     @Override
-    public void newPayment(){
-        System.out.println("Procesando el pago actual de "+name);
+    public void newPayment() {
+        System.out.println("Procesando el pago actual de " + name);
     }
 }
 ```
@@ -546,34 +552,34 @@ public class GuestUserPayment implements NewPayment{
 ```java
 public class PaymentHelper {
     //Se crea la lista correspondiente a los pagos previos
-    List <PreviousPayment> previousPayments = new ArrayList<PreviousPayment>();
-    
+    List<PreviousPayment> previousPayments = new ArrayList<PreviousPayment>();
+
     //Se crea la lista correspondiente a los nuevos pagos
-    List <NewPayment> newPayments = new ArrayList<NewPayment>();
-    
+    List<NewPayment> newPayments = new ArrayList<NewPayment>();
+
     //Método para agregar pagos previos a clientes registrados
-    public void addPreviousPayment(PreviousPayment previousPayment){
+    public void addPreviousPayment(PreviousPayment previousPayment) {
 
         previousPayments.add(previousPayment);
     }
-    
+
     //Método para añadir pagos nuevos a clientes registrados y no registrados
-    public void addNewPayment(NewPayment newPayment){
+    public void addNewPayment(NewPayment newPayment) {
 
         newPayments.add(newPayment);
     }
-    
+
     //Método que accede a la lista previousPayment para mostrar los pagos de clientes registrados
     public void showPreviousPayments() {
-        for (PreviousPayment previousPayment: previousPayments){
+        for (PreviousPayment previousPayment : previousPayments) {
             previousPayment.previousPaymentInfo();
         }
         System.out.println("--------------------");
     }
 
     //Método que accede a la lista newPayment para mostrar que se están procesando los nuevos pagos
-    public void processNewPayments(){
-        for(NewPayment newPayment: newPayments){
+    public void processNewPayments() {
+        for (NewPayment newPayment : newPayments) {
             newPayment.newPayment();
         }
         System.out.println("--------------------");
@@ -639,7 +645,7 @@ public class Cliente {
 ```
 
 Respecto a la clase <b>GuestUserPayment</b>, ahora implementa la interface <b>NewPayment</b>:
-    <li>Antes: </li>
+<li>Antes: </li>
 
 ```java
     public class GuestUserPayment implements Payment
@@ -651,90 +657,94 @@ Respecto a la clase <b>GuestUserPayment</b>, ahora implementa la interface <b>Ne
     public class GuestUserPayment implements NewPayment
 ```
 
-Respecto a la clase <b>PaymentHelper</b>, se tuvo que reemplazar la unica lista que tenía por 2 que guarden la información de los pagos anteriores
+Respecto a la clase <b>PaymentHelper</b>, se tuvo que reemplazar la unica lista que tenía por 2 que guarden la
+información de los pagos anteriores
 y los nuevos:
 <li>Antes: </li>
 
 ```java
-    List<Payment> payments = new ArrayList<Payment>();
+    List<Payment> payments=new ArrayList<Payment>();
 ```
 
 <li>Ahora: </li>
 
 ```java
     //Se crea la lista correspondiente a los pagos previos
-    List <PreviousPayment> previousPayments = new ArrayList<PreviousPayment>();
-    //Se crea la lista correspondiente a los nuevos pagos
-    List <NewPayment> newPayments = new ArrayList<NewPayment>();
+    List<PreviousPayment> previousPayments=new ArrayList<PreviousPayment>();
+        //Se crea la lista correspondiente a los nuevos pagos
+        List<NewPayment> newPayments=new ArrayList<NewPayment>();
 ```
-Otra modificación importante a <b>PaymentHelper</b> se dió en los métodos, para esto se usaron los nombres que eran llamados en la clase <b>Cliente</b>:
+
+Otra modificación importante a <b>PaymentHelper</b> se dió en los métodos, para esto se usaron los nombres que eran
+llamados en la clase <b>Cliente</b>:
 
 <li>Antes: </li>
 
 ```java
     public void addUser(Payment user){
         payments.add(user);
-    }
-    public void showPreviousPayments() {
-        for (Payment payment: payments) {
-            payment.previousPaymentInfo();
-            System.out.println("------");
         }
-    }
-    public void processNewPayments()  {
-        for (Payment payment: payments) {
-            payment.newPayment();
-            System.out.println("------");
+public void showPreviousPayments(){
+        for(Payment payment:payments){
+        payment.previousPaymentInfo();
+        System.out.println("------");
         }
-    }
+        }
+public void processNewPayments(){
+        for(Payment payment:payments){
+        payment.newPayment();
+        System.out.println("------");
+        }
+        }
 ```
 
 <li>Ahora: </li>
 
 ```java
     //Método para agregar pagos previos a clientes registrados
-    public void addPreviousPayment(PreviousPayment previousPayment){
+public void addPreviousPayment(PreviousPayment previousPayment){
         previousPayments.add(previousPayment);
-    }
+        }
 
-    //Método para añadir pagos nuevos a clientes registrados y no registrados
-    public void addNewPayment(NewPayment newPayment){
+//Método para añadir pagos nuevos a clientes registrados y no registrados
+public void addNewPayment(NewPayment newPayment){
         newPayments.add(newPayment);
-    }
+        }
 
-    //Método que accede a la lista previousPayment para mostrar los pagos de clientes registrados
-    public void showPreviousPayments() {
-        for (PreviousPayment previousPayment: previousPayments){
-            previousPayment.previousPaymentInfo();
+//Método que accede a la lista previousPayment para mostrar los pagos de clientes registrados
+public void showPreviousPayments(){
+        for(PreviousPayment previousPayment:previousPayments){
+        previousPayment.previousPaymentInfo();
         }
         System.out.println("--------------------");
-    }
+        }
 
-    //Método que accede a la lista newPayment para mostrar que se están procesando los nuevos pagos
-    public void processNewPayments(){
-        for(NewPayment newPayment: newPayments){
-            newPayment.newPayment();
+//Método que accede a la lista newPayment para mostrar que se están procesando los nuevos pagos
+public void processNewPayments(){
+        for(NewPayment newPayment:newPayments){
+        newPayment.newPayment();
         }
         System.out.println("--------------------");
-    }
+        }
 
 ```
+
 La clase <b>Cliente</b> se nos entregó modificada, los cambios se notan a la hora de añadir pagos anteriores y nuevos:
 <li>Antes: </li>
 
 ```java
-    System.out.println("Demostracion sin LSP\n" );
-        PaymentHelper helper = new PaymentHelper();
+    System.out.println("Demostracion sin LSP\n");
+        PaymentHelper helper=new PaymentHelper();
 
         // Instanciando dos usuarios registrados
-        RegisteredUserPayment pagoAbejita = new RegisteredUserPayment("Abejita");
-        RegisteredUserPayment pagoChalito = new RegisteredUserPayment("Chalito");
+        RegisteredUserPayment pagoAbejita=new RegisteredUserPayment("Abejita");
+        RegisteredUserPayment pagoChalito=new RegisteredUserPayment("Chalito");
 
         // Agregando los usuarios a los helper
         helper.addUser(pagoAbejita);
         helper.addUser(pagoChalito);
 
-        GuestUserPayment guestUser = new GuestUserPayment();
+        GuestUserPayment guestUser=new GuestUserPayment();
         helper.addUser(guestUser);
 
         // Procesando el pago usando la clase helper
@@ -747,13 +757,13 @@ La clase <b>Cliente</b> se nos entregó modificada, los cambios se notan a la ho
 
 ```java
     System.out.println("Demostracion LSP.\n");
-        PaymentHelper helper = new PaymentHelper();
+        PaymentHelper helper=new PaymentHelper();
 
         // Instanciando dos usuarios registrados
-        RegisteredUserPayment irene = new RegisteredUserPayment("Irene");
-        RegisteredUserPayment claudio = new RegisteredUserPayment("Claudio");
+        RegisteredUserPayment irene=new RegisteredUserPayment("Irene");
+        RegisteredUserPayment claudio=new RegisteredUserPayment("Claudio");
         // Instanciando el pago de un usuario invitado
-        GuestUserPayment guestUser1 = new GuestUserPayment();
+        GuestUserPayment guestUser1=new GuestUserPayment();
 
         // Consolidando la informacion del pago anterior al helper
         helper.addPreviousPayment(irene);
@@ -790,9 +800,11 @@ Para este caso se tuvo en cuenta que se mostrara la recuperación de los ultimos
     public static void showAllOperations(PaymentHelper showOperations){
         showOperations.showPreviousPayments();
         showOperations.processNewPayments();
-    }    
+        }    
 ``` 
-Como se observa toma como argumento un elemento de tipo <b>PaymentHelper</b>, y contiene a los 2 métodos que muestran las operaciones que se están ejecutando. Por otra parte, en la clase <b>Cliente</b> se debe reemplazar lo siguiente:
+
+Como se observa toma como argumento un elemento de tipo <b>PaymentHelper</b>, y contiene a los 2 métodos que muestran
+las operaciones que se están ejecutando. Por otra parte, en la clase <b>Cliente</b> se debe reemplazar lo siguiente:
 
 <li>Antes:</li>
 
@@ -800,15 +812,16 @@ Como se observa toma como argumento un elemento de tipo <b>PaymentHelper</b>, y 
         // Recupera todos los pagos anteriores de los usuarios registrados
         helper.showPreviousPayments();
 
-        // Procesa todas las solicitudes de pago nuevos de todos los usuarios
-        helper.processNewPayments();
+                // Procesa todas las solicitudes de pago nuevos de todos los usuarios
+                helper.processNewPayments();
 ```
+
 <li>Ahora:</li>
 
 ```java
     //Muestra todas las operaciones que se realizan actualmente
-        //*Recuperación de pagos anteriores
-        //*Procesamiento de pagos nuevos
+//*Recuperación de pagos anteriores
+//*Procesamiento de pagos nuevos
         helper.showAllOperations(helper);
 ```
 
@@ -881,6 +894,7 @@ interface Impresora {
     void sendFax();
 }
 ```
+
 <details>
   <summary>Respuesta</summary>
 <ul> Antes de afirmar o negar algo respecto a este punto debemos de tener en cuenta que es importante que las interface posean métodos que puedan ser usados por todas las clases a las que se implementen, a partir de esto podemos decir que no es conveniente, ya que como muchos puedo afirmar que la impresora que tengo en casa no envía fax, que si es algo que llevamos a código e implementamos la interface <b>Impresora</b> que se nos presentó en la pregunta nos va a causar una excepción, otro ejemplo de esto sería un supuesto en el que en la interface <b>Impresora</b> tenemos el método escanear, método que causaría también excepciones ya que no todas las impresoras poseen un escáner. Si nosotros usamos la interface tal y como se nos presenta en la pregunta deberíamos modificar las otras clases que tenemos, pero debemos de tener el cuenta el <b>OCP</b> ya que no podemos modificar los métodos ya existentes en las clases.
@@ -908,6 +922,7 @@ incorrecta, ves el impacto de violar el **LSP**. Una vez que modificas **Impreso
 ```java
 interface Impresora {
     void printDocument();
+
     void sendFax();
 }
 ```
@@ -918,19 +933,23 @@ interface Impresora {
 interface Impresora {
     void printDocument();
 }
+
 interface Fax {
     void sendFax();
 }
 ```
 
-Con esta modificación se implementaría las interface necesarias según el tipo de impresora que tengamos. Como un plus podemos también crear la interface <b>Escaner</b>
+Con esta modificación se implementaría las interface necesarias según el tipo de impresora que tengamos. Como un plus
+podemos también crear la interface <b>Escaner</b>
 
 ```java
 interface Escaner {
     void scanDocument();
 }
 ```
-Con esto ya podríamos usar las combinaciones de interface para no tener problemas con las impresoras que se usen en nuestro código.
+
+Con esto ya podríamos usar las combinaciones de interface para no tener problemas con las impresoras que se usen en
+nuestro código.
 
 </ul>
 </details>
@@ -943,11 +962,11 @@ polimórfico:
 ```java
 Impresora impresora=new ImpresoraAvanzada();
 
-    impresora.printDocument();
-    impresora.sendFax();
+        impresora.printDocument();
+        impresora.sendFax();
 
-    impresora=new ImpresoraBasica();
-    impresora.printDocument();
+        impresora=new ImpresoraBasica();
+        impresora.printDocument();
 //impresora .sendFax();
 ```
 
@@ -956,12 +975,12 @@ Además, no puedes escribir algo como
 ```java
 List<Impresora> impresoras=new ArrayList<Impresora>();
 
-    impresoras.add(new ImpresoraAvanzada());
-    impresoras.add(new ImpresoraBasica());
+        impresoras.add(new ImpresoraAvanzada());
+        impresoras.add(new ImpresoraBasica());
 
-    for(Impresora dispositivo:impresoras){.printDocument();
-    // dispositivo.sendFax();
-    }
+        for(Impresora dispositivo:impresoras){.printDocument();
+        // dispositivo.sendFax();
+        }
 ```
 
 En ambos casos, verás excepciones de tiempo de ejecución.
@@ -973,10 +992,10 @@ Efectivamente en los 2 casos se obtienen errores y no se ejecuta correctamente e
 class Cliente {
     public static void main(String[] args) {
         System.out.println("Demostracion sin ISP");
-        
+
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
-        
+
         ImpresoraAvanzada impresoraAvanzada = new ImpresoraAvanzada();
         impresoraAvanzada.printDocument();
         impresoraAvanzada.sendFax();
@@ -985,8 +1004,10 @@ class Cliente {
 }
 ```
 
-Como se observa la impresora avanzada debe ser declarada como tal ya que si la declaramos como <b>Impresora</b> tendríamos el problema que no se podría usar el método <b>sendFax()</b>.
+Como se observa la impresora avanzada debe ser declarada como tal ya que si la declaramos como <b>Impresora</b>
+tendríamos el problema que no se podría usar el método <b>sendFax()</b>.
 De esta forma ya obtendríamos una salida correcta:
+
 ```console
 Demostración sin ISP
 La impresora básica imprime un documento.
@@ -1003,7 +1024,7 @@ Reemplaza el segmento de código
 ```java
 for(Impresora dispositivo:impresoras){.printDocument();
         // dispositivo.sendFax();
-}
+        }
 ```
 
 Con una expresión lambda adecuada. Tú eliges cuál quieres usar.
@@ -1014,14 +1035,15 @@ Con una expresión lambda adecuada. Tú eliges cuál quieres usar.
 El código presentado en la pregunta se reemplazó con el siguiente código, con ayuda del <b>foreach()</b> y de la siguiente expresión lambda:
 
 ```java
-    impresora -> impresora.printDocument()
+    impresora->impresora.printDocument()
 ```
 
 Finalmente ese fragmento de código quedaría así:
 
 ```java
-    impresoraList.forEach(impresora -> impresora.printDocument());
+    impresoraList.forEach(impresora->impresora.printDocument());
 ```
+
 Para esto también se tuvo que modificar el código anterior de la clase <b>Cliente</b>.
 <li>Antes:</li>
 
@@ -1029,7 +1051,7 @@ Para esto también se tuvo que modificar el código anterior de la clase <b>Clie
     class Cliente {
     public static void main(String[] args) {
         System.out.println("Demostracion sin ISP");
-    
+
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
 
@@ -1041,14 +1063,15 @@ Para esto también se tuvo que modificar el código anterior de la clase <b>Clie
 
 }
 ```
+
 <li>Ahora:</li>
 
 ```java
 class Cliente {
     public static void main(String[] args) {
         System.out.println("Demostracion sin ISP");
-        
-        List <Impresora> impresoraList = new ArrayList<Impresora>();
+
+        List<Impresora> impresoraList = new ArrayList<Impresora>();
 
         impresoraList.add(new ImpresoraBasica());
         impresoraList.add(new ImpresoraAvanzada());
@@ -1059,12 +1082,15 @@ class Cliente {
 
 }
 ```
+
 Obteniendo la siguiente salida:
+
 ```console
 Demostracion sin ISP
 La impresora basica imprime un documento.
 La impresora avanzada imprime un documento.
 ```
+
 </ul>
 </details>
 
@@ -1088,7 +1114,7 @@ Salida de
     class Cliente {
     public static void main(String[] args) {
         System.out.println("Demostracion sin ISP");
-    
+
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
 
@@ -1107,11 +1133,15 @@ La impresora básica imprime un documento.
 La impresora avanzada imprime un documento.
 La impresora avanzada envía un fax.
 ```
+
 <B>Línea 1</B>
+
 ```console
 La impresora básica imprime un documento.
 ```
-Correspondiente a una impresora básica, se obtiene haciendo un llamado al método <b>printDocument()</b> de la clase <b>ImpresoraBasica</b>:
+
+Correspondiente a una impresora básica, se obtiene haciendo un llamado al método <b>printDocument()</b> de la clase <b>
+ImpresoraBasica</b>:
 
 ```java
 class ImpresoraBasica implements Impresora {
@@ -1121,6 +1151,7 @@ class ImpresoraBasica implements Impresora {
     }
 }
 ```
+
 Se observa que se realizó un <b>@Override</b> ya que este método pertenece a la interface <b>Impresora</b>.
 
 ```java
@@ -1130,11 +1161,15 @@ interface Impresora {
 ```
 
 <B>Línea 2 y 3</B>
+
 ```console
 La impresora avanzada imprime un documento.
 La impresora avanzada envía un fax.
 ```
-Correspondiente a una impresora avanzada, se obtiene haciendo un llamado a los métodos <b>printDocument()</b> y <b>sendFax()</b> de la clase <b>ImpresoraAvanzada</b>:
+
+Correspondiente a una impresora avanzada, se obtiene haciendo un llamado a los métodos <b>printDocument()</b> y <b>
+sendFax()</b> de la clase <b>ImpresoraAvanzada</b>:
+
 ```java
 public class ImpresoraAvanzada implements Impresora, Fax {
     @Override
@@ -1148,15 +1183,20 @@ public class ImpresoraAvanzada implements Impresora, Fax {
     }
 }
 ```
-Se observan 2 <b>@Override</b> uno de ellos del método <b>printDocument()</b> perteneciente a la interface <b>Impresora</b>
+
+Se observan 2 <b>@Override</b> uno de ellos del método <b>printDocument()</b> perteneciente a la interface <b>
+Impresora</b>
+
 ```java
 interface Impresora {
     void printDocument();
 }
 ```
+
 El otro método <b>sendFax()</b> que pertenece a la interface <b>Fax</b>.
+
 ```java
-interface  Fax {
+interface Fax {
     void sendFax();
 }
 ```
@@ -1211,9 +1251,26 @@ Muestra la salida y explica los resultados en función de los métodos entregado
 - **OracleDataBase.java**
 - **Cliente.java**
 
+<details>
+<summary>Respuesta</summary>
+<ul> 
+
+```console
+A demo without DIP.
+El id: E001 es guardado en la base de datos Oracle.
+```
+
+<li> En la clase Cliente se instancia una objeto de tipo InterfazUsuario de nombre usuario. En la clase InterfazUsuario se instancia un objeto del tipo OracleDatabase de nombre oracleDatabase como un atributo de esta clase, lo que nos permite acceder al método saveEmpIdInDatabase de la clase OracleDatabase que solicita un string empId de parametro para imprimir un mensaje si el empId fue guardado en la base de datos Oracle.
+Al seguir este proceso se imprimen los resultados.</li>
+</ul> </details>
+
 #### Pregunta 32 [[@Overglitch](https://github.com/Overglitch)]
 
 El programa es simple, pero ¿Qué tipo de problemas presenta?
+
+<details>
+<summary>Respuesta</summary>
+<ul> <li> Para ser un problema simple la dependencia de la clase OracleDatabase para el funcionamiento de la clase InterfazUsuario nos dificulta la modificación del código. </li> </ul> </details>
 
 #### Pregunta 33[[@Bobter](https://github.com/Bobter)]
 
@@ -1260,14 +1317,15 @@ public class InterfazUsuario {
 
 ```java
 class InterfazUsuario {
-  private BaseDatos baseDatos;
+    private BaseDatos baseDatos;
 
-  public InterfazUsuario(BaseDatos baseDatos) {
-      this.baseDatos= baseDatos;
-  }
-  public void saveEmployeeId(String empId) {
-      baseDatos.saveEmpIdInDatabase(empId);
-  }
+    public InterfazUsuario(BaseDatos baseDatos) {
+        this.baseDatos = baseDatos;
+    }
+
+    public void saveEmployeeId(String empId) {
+        baseDatos.saveEmpIdInDatabase(empId);
+    }
 }
 ```
 
