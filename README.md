@@ -1228,18 +1228,139 @@ siguientes archivos. No olvides explicar tus resultados.
 - **ImpresoraAvanzada.java**
 - **Cliente.java**
 
+<details>
+  <summary>Respuesta</summary>
+<ul> 
+<li> Código de la clase Cliente completado </li>
+
+```java
+class Cliente {
+    public static void main(String[] args) {
+        System.out.println("Demostracion con ISP");
+        Impresora impresora = new ImpresoraBasica();
+        impresora.printDocument();
+        Impresora impresoraAvanzada = new ImpresoraAvanzada();
+        impresoraAvanzada.printDocument();
+        Fax dispositivoFax = new ImpresoraAvanzada();
+        dispositivoFax.sendFax();
+    }
+}
+```
+
+<li> Código de la clase Impresora completado </li>
+
+```java
+interface Impresora {
+    void printDocument();
+}
+```
+
+<li> Código de la clase DispositivoFax completado </li>
+
+```java
+interface Fax {
+    void sendFax();
+}
+```
+
+<li> Código de la clase ImpresoraBasica completado </li>
+
+```java
+class ImpresoraBasica implements Impresora {
+    @Override
+    public void printDocument() {
+        System.out.println("La impresora basica imprime un documento.");
+    }
+}
+```
+
+<li> Código de la clase ImpresoraAvanzada completado </li>
+
+```java
+public class ImpresoraAvanzada implements Impresora, Fax {
+    @Override
+    public void printDocument() {
+        System.out.println("La impresora avanzada imprime un documento.");
+    }
+
+    @Override
+    public void sendFax() {
+        System.out.println("La impresora avanzada envía un fax.");
+    }
+}
+```
+
+<li> Código de salida </li>
+
+```console
+Demostracion con ISP
+La impresora basica imprime un documento.
+La impresora avanzada imprime un documento.
+La impresora avanzada envía un fax.
+```
+
+</ul> </details>
+
 #### Pregunta 28 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método predeterminado dentro de la interfaz?
+
+<details>
+  <summary>Respuesta</summary>
+<ul>
+<li> Código </li>
+
+```java
+@Override
+public void sendFax(){
+        throw new UnsupportedOperationException();
+        }
+```
+
+Cada vez que añades un método en la clase base, las clases derivadas pueden usar el método entonces en caso de que se
+proporcione un método de fax por defecto en una interfaz, la ImpresoraBasica debe lanzar una excepción para evitar
+problemas.
+</ul> </details>
 
 #### Pregunta 29 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si proporcionas un método de fax predeterminado en una interfaz?
 ¡Viste el problema potencial con esto!
 
+<details>
+  <summary>Respuesta</summary>
+<ul>
+<li> Código </li>
+
+```java
+@Override
+public void sendFax(){
+        throw new UnsupportedOperationException();
+            }
+```
+
+Cada vez que añades un método en la clase base, las clases derivadas pueden usar el método entonces en caso de que se
+proporcione un método de fax por defecto en una interfaz, la ImpresoraBasica debe lanzar una excepción para evitar
+problemas.
+</ul> </details>
+
 #### Pregunta 30 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Qué sucede si usa un método vacío, en lugar de lanzar la excepción?
+
+<details>
+  <summary>Respuesta</summary>
+<ul>
+<li> Método sendFax() vacío </li>
+
+```java
+@Override
+public void sendFax(){}
+```
+
+El código se ejecutará correctamente, sin embargo, sería mejor que muestre una respuesta en forma mensaje que indica que
+se envio o no un fax.
+</ul> </details>
 
 ### [Principio de inversión de dependencia](https://es.wikipedia.org/wiki/Principio_de_inversi%C3%B3n_de_la_dependencia)
 
