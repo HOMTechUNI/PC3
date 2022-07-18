@@ -1433,11 +1433,11 @@ ellos. Es por eso que ves las interfaces segregadas con solamente un método.
 Para terminar esta pregunta, en la sección de `SOLID` del código entregado, completa los
 siguientes archivos. No olvides explicar tus resultados.
 
-- `Impresora.java`
-- `DispositivoFax.java`
-- `ImpresoraBasica.java`
-- `ImpresoraAvanzada.java`
-- `Cliente.java`
+- **Impresora.java**
+- **DispositivoFax.java**
+- **ImpresoraBasica.java**
+- **ImpresoraAvanzada.java**
+- **Cliente.java**
 
 <details>
   <summary>Respuesta</summary>
@@ -1579,9 +1579,9 @@ se envio o no un fax.
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
-- `InterfaceUsuario.java`
-- `OracleDataBase.java`
-- `Cliente.java`
+- **InterfaceUsuario.java**
+- **OracleDataBase.java**
+- **Cliente.java**
 
 <details>
 <summary>Respuesta</summary>
