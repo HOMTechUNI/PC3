@@ -1806,4 +1806,4 @@ public class Cliente {
 </ul>
 </details>
 
-<iframe src="https://giphy.com/embed/THDBkIhJ42uqjXxXAs" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/THDBkIhJ42uqjXxXAs"></a></p>
+![Alt Text](https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
