@@ -1,5 +1,5 @@
 package NoSolid.OCP;
-/*import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Cliente {
@@ -36,4 +36,4 @@ public class Cliente {
         estudiantes.add(claudio);
         return estudiantes;
     }
-}*/
+}

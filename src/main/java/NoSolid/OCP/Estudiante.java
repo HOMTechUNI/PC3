@@ -1,6 +1,6 @@
 package NoSolid.OCP;
 
-/*public class Estudiante {
+ class Estudiante {
     String name;
     String regNumber;
     String department;
@@ -15,7 +15,6 @@ package NoSolid.OCP;
 
     @Override
     public String toString(){
-        return ("Nombre: " + name + "\nNumero Regex: " + regNumber + "\nDept:" + department + "\nMarks:"
-                + score + "\n*******");
+        return ("Nombre: " + name + "\nNumero Regex: " + regNumber + "\nDept:" + department + "\nMarks:" + score + "\n*******");
     }
-}*/
+}
