@@ -1,3 +1,5 @@
+<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg" alt=""></a></div>
+
 # Curso de desarrollo de software
 
 ## Práctica Calificada 3
