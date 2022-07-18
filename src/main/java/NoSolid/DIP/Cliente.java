@@ -5,6 +5,5 @@ public class Cliente {
         System.out.println("A demo without DIP.");
         InterfazUsuario usuario = new InterfazUsuario();
         usuario.saveEmployeeId("E001");
-
     }
 }
