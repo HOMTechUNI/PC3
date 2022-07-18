@@ -75,20 +75,20 @@ Este empleado es un empleado junior
 ```
 
 <li>
-La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados ,de Jessica Abejita
-y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un métodos llamado
+La salida que se obtiene al ejecutar la clase Cliente son los datos de 2 empleados, de Jessica Abejita
+y de Chalito Smart. Para que esta clase pueda imprimir estos datos creó un método llamado
 showEmplDetails() cullo parámetro emp es un objeto de clase Empleado, primo muestra la identificación
 emp con el método displayEmpDetail(), el cual muestra el nombre y apellido del empleado más los
 años de experiencia laboral que tiene, luego imprime el id del empleado usando el método del
-emp llamado generateEmptId()  el cual genera un id aleatorio con la primera letra del nombre del
+emp llamado generateEmptId() el cual genera un, id aleatorio con la primera letra del nombre del
 empleado concatenado con un número aleatorio menor a 1000,finalmente imprime si el empleado es senior
 o un junior usando el método checkSenioriti() de emp, el cual comprobará si es que el empleado tiene
-más de 5 años de experiencia para que el método imprima “senior” , si no es así imprimirá “junior”.
+más de 5 años de experiencia para que el método imprima “senior”, si no es así imprimirá “junior”.
 
-En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual se instancia con
+En la función main de Cliente se crea un objeto Empleado llamado jessica, el cual de instancia con
 nombre “Jessica”, apellido “Abejita” y con 7.5 años de experiencia por lo que al momento de imprimir
 sus datos su id iniciará con el carácter J y se imprimirá que es una empleada senior por tener más
-de 5 años de experiencia, después se crea un objeto Empleado llamado chalo, el cual se instancia
+de 5 años de experiencia, después se crea un objeto Empleado llamado chalo, el cual de instancia
 con nombre “Chalito”, apellido “Smart” y con 3.2 años de experiencia por lo que al momento de imprimir
 sus datos su id iniciará con el carácter C y se imprimirá que es una empleada junior por tener más
 de 5 años de experiencia.
@@ -107,13 +107,13 @@ de 5 años de experiencia.
 
 #### Pregunta 3 [[@Overglitch](https://github.com/Overglitch)]
 
-Modifica la clase Empleado. Agrega dos clases **SeniorityChecker** que contiene el
-método **checkSeniority()** y la clase **GeneradorIDEmpleado** contiene el método
-**generateEmpId(...)** para generar la identificación del empleado.
-Para mejorar la legibilidad del código y evitar torpezas dentro del método **main()**, utiliza el
-método estático **showEmpDetail(...)**. Este método llama al método **displayEmpDetail()** de
-Empleado, al método generateEmpId() de GeneradorIDEmpleado y al método **checkSeniority()**
-de **SeniorityChecker**. Tú entiendes que este método no era necesario, pero hace que el código
+Modifica la clase Empleado. Agrega dos clases `SeniorityChecker` que contiene el
+método `checkSeniority()` y la clase `GeneradorIDEmpleado` contiene el método
+`generateEmpId(...)` para generar la identificación del empleado.
+Para mejorar la legibilidad del código y evitar torpezas dentro del método `main()`, utiliza el
+método estático `showEmpDetail(...)`. Este método llama al método `displayEmpDetail()` de
+Empleado, al método generateEmpId() de GeneradorIDEmpleado y al método `checkSeniority()`
+de `SeniorityChecker`. Tú entiendes que este método no era necesario, pero hace que el código
 del cliente sea simple y fácilmente comprensible.
 
 <details>
@@ -182,7 +182,7 @@ Este empleado tiene:	7.5 años de experiencia
 El ID del empleado es:	J515
 Este empleado es un:	Empleado Senior
 
-*******
+*********
 
 Nombre del empleado:	Chalito, Smart
 Este empleado tiene:	3.2 años de experiencia
@@ -208,7 +208,7 @@ alterar las implementadas.
 
 #### Pregunta 5 [[@Bobter](https://github.com/Bobter)]
 
-¿Por qué no es correcto colocar **displayResult()** y **evaluateDistinction()** en la misma
+¿Por qué no es correcto colocar `displayResult()` y `evaluateDistinction()` en la misma
 clase, como la siguiente?
 
 ```java
@@ -227,7 +227,7 @@ class Estudiante {
 
 <details>
   <summary>Respuesta</summary>
-    Para el método <b>evaluateDistinction(…)</b> estaríamos violando el principio abierto/cerrado para la clase <b>DistinctionDecider</b>, al implementar este método dentro de la clase <b>Estudiante</b> tendríamos que modificar la funcionalidad de <b>DistinctionDecider</b> si lo vemos desde el punto de vista de OCP estaríamos cometiendo un gran error ya que podemos ampliar las funcionalidades de una clase pero no modificar las ya existentes. Respecto a la función <b>displayResult(…)</b> no solo estaríamos mostrando el resultado de las demás funciones de la clase <b>Estudiante</b> sino que también los resultados del decider que si bien este método estaría ampliando la funcionalidad de la clase <b>Estudiante</b> sin modificar las ya existentes al mostrar los resultados de los métodos de otra clase no estamos respetando que la otra clase pueda estar abierta a ampliaciones de sus funcionalidades.
+    Para el método <b>evaluateDistinction(…)</b> estaríamos violando el principio abierto/cerrado para la clase <b>DistinctionDecider</b>, al implementar este método dentro de la clase <b>Estudiante</b> tendríamos que modificar la funcionalidad de <b>DistinctionDecider</b> si lo vemos desde el punto de vista de OCP estaríamos cometiendo un gran error, ya que podemos ampliar las funcionalidades de una clase pero no modificar las ya existentes. Respecto a la función <b>displayResult(…)</b> no solo estaríamos mostrando el resultado de las demás funciones de la clase <b>Estudiante</b> sino que también los resultados del decider que si bien este método estaría ampliando la funcionalidad de la clase <b>Estudiante</b> sin modificar las ya existentes al mostrar los resultados de los métodos de otra clase no estamos respetando que la otra clase pueda estar abierta a ampliaciones de sus funcionalidades.
 
 </details>
 
@@ -272,6 +272,7 @@ Distinciones:
 R1 ha recibido una distincion en ciencias.
 R3 ha recibido una distincion en artes.
 ```
+
 La salida del código Cliente nos muestra los datos de 4 estudiantes, los datos mostrados
 son su nombre, número de registro, su especialidad y su nota, finalmente muestra un
 mensaje de los alumnos que consiguieron la distinción.
@@ -279,20 +280,20 @@ mensaje de los alumnos que consiguieron la distinción.
 La instancia de los estudiantes se obtiene mediante el método enrollStudents() el cual
 retorna una lista de objetos de la clase Estudiante, el cual instancia 4 objetos alumnos que
 serán añadidos a una lista de estudiantes. La primera alumna es Irene con número de registro
-R1, puntaje 81.5 y pertenece al departamento de ciencias de la computación . La segunda alumna
+R1, puntaje 81.5 y pertenece al departamento de ciencias de la computación. La segunda alumna
 es Jessica con número de registro R2, puntaje 72 y pertenece al departamento de Física, el
-tercer alumno es Chalo con número de registro R3 , puntaje 71 y pertenece al departamento de
-Historia.El último alumno es Claudio con número de registro  R4, puntaje 66.5 y pertenece al
+tercer alumno es Chalo con número de registro R3, puntaje 71 y pertenece al departamento de
+Historia.El último alumno es Claudio con número de registro R4, puntaje 66.5 y pertenece al
 departamento de Literatura.
 
 En el método main de la clase Cliente se crea una lista de objetos estudiantes llamada enrolledStudens
-y se iguala al retorno del método enrollStudents() mencionando anteriormente, después de imprime
+y se iguala al retorno del método enrollStudents() mencionando anteriormente, después se imprime
 los datos de cada uno de los estudiantes de la lista gracias a que la clase Estudiante tiene el
 método toString sobrescrito para poder imprimir los datos del estudiantes cuando se pone la instancia
 de esta clase en un string.
 
-Después de instancia un objeto de la clase DistinctionDecider el cual imprime el número de registro del
-estudiantes que a conseguido la distinción, si un alumno que pertenece a la facultad de ciencias (pertenece
+Después de instancia un objeto de la clase DistinctionDecider el cual imprime el número de registro de los
+estudiantes que ha conseguido la distinción, si un alumno que pertenece a la facultad de ciencias (pertenece
 al departamento de ciencias de la computación y física) y tiene un puntaje mayor a 80 puntos entonces
 se imprimirá su código indicando que ganó la distinción caso contrario no imprime nada, lo mismo
 pasa para estudiantes de la facultad de arte (pertenecen al departamento de historia y literatura)
@@ -309,18 +310,18 @@ su puntaje es mayor a 70.
 #### Pregunta 7 [[@Overglitch](https://github.com/Overglitch)]
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
-Para abordar este problema, puedes escribir un mejor programa. El OCP se puede lograr de
+Para abordar este problema, puedes escribir un mejor programa. El `OCP` se puede lograr de
 diferentes maneras, pero la abstracción es el corazón de este principio. Si puedes diseñar tu
-aplicación siguiendo el **OCP**, tu aplicación es flexible y extensible. No siempre es fácil
-implementar completamente este principio, pero el cumplimiento parcial de **OCP** puede
+aplicación siguiendo el `OCP`, tu aplicación es flexible y extensible. No siempre es fácil
+implementar completamente este principio, pero el cumplimiento parcial de `OCP` puede
 generarle un mayor beneficio. También observa que comenzó la demostración 3 siguiendo el
-**SRP**. Si no sigues el **OCP**, puedes terminar con una clase que realiza varias tareas, lo que
-significa que el **SRP** no funciona.
+`SRP`. Si no sigues el `OCP`, puedes terminar con una clase que realiza varias tareas, lo que
+significa que el `SRP` no funciona.
 Para la situación actual, puedes dejar la clase Estudiante como está. Pero quieres mejorar el
 código. Tú comprendes que en el futuro puedes necesitar considerar una corriente diferente,
 como el comercio. ¿Cómo eliges una corriente? Se basa en el tema elegido por un estudiante.
-Entonces, en el siguiente ejemplo, haces que la clase **Estudiante** sea abstracta.
-**ArteEstudiante** y **CienciaEstudiante** son las clases concretas y se utilizan para proporcionar la
+Entonces, en el siguiente ejemplo, haces que la clase `Estudiante` sea abstracta.
+`ArteEstudiante` y `CienciaEstudiante` son las clases concretas y se utilizan para proporcionar la
 información del *"departamento"*.
 
 <details>
@@ -332,8 +333,8 @@ información del *"departamento"*.
 #### Pregunta 8 [[@Overglitch](https://github.com/Overglitch)]
 
 Debes abordar el método de evaluación para la distinción de una mejor manera.
-Por lo tanto, crea la interfaz **DistinctionDecider** que contiene un método llamado
-**EvaluationDistinction**.
+Por lo tanto, crea la interfaz `DistinctionDecider` que contiene un método llamado
+`EvaluationDistinction`.
 
 <details>
   <summary>Respuesta</summary>
@@ -353,13 +354,13 @@ según lo que se requiera.
 
 #### Pregunta 9 [[@Overglitch](https://github.com/Overglitch)]
 
-Completa el código de **ArtsDistinctionDecider** y **ScienceDistinctionDecider** que
-implementan esta interfaz y sobreescriben el método de **evaluateDistinction(...)** para
+Completa el código de `ArtsDistinctionDecider` y `ScienceDistinctionDecider` que
+implementan esta interfaz y sobreescriben el método de `evaluateDistinction(...)` para
 especificar los criterios de evaluación según sus necesidades. De esta forma, los criterios de
 distinción específicos de flujo se envuelven en una unidad independiente.
-Debes tener en cuenta que el método de **evaluateDistinction(...)** acepta un parámetro
-**Estudiante**. Significa que ahora también puede pasar un objeto **ArtsStudent** o un objeto
-**ScienceStudent** a este método.
+Debes tener en cuenta que el método de `evaluateDistinction(...)` acepta un parámetro
+`Estudiante`. Significa que ahora también puede pasar un objeto `ArtsStudent` o un objeto
+`ScienceStudent` a este método.
 El código restante es fácil y no debería tener ningún problema para comprender la siguiente
 demostración ahora.
 
@@ -508,20 +509,20 @@ muestras estos pagos y solo mostrará un texto genérico inicial de llamada a la
 anteriores y el actual.
 
 En la clase Cliente, en el método main se instancia un objeto de clase PaymentHelper llamaod
-helper, luego se instancia 2 objetos de la clase RegisteredUserPayment ,el cual hereda del interfaz
+helper, luego se instancia 2 objetos de la clase RegisteredUserPayment ,el cual hereda de la interfaz
 Payment, estos objetos son llamados pagoAbejita y pagoChalito los cuales en su constructor se
-ingresa el string de sus nombres los cuales son Abejita y Chalito respectivamente .
+ingresa el string de sus nombres los cuales son Abejita y Chalito respectivamente.
 
-Después , con el objeto helper creado anteriormente usamos el método addUser() para añadir a
-los pagadores Abejita y  Chalito a la lista de objetos Paymernt que hay en el helper, es posible
+Después, con el objeto helper creado anteriormente usamos el método addUser() para añadir a
+los pagadores Abejita y Chalito a la lista de objetos Paymernt que hay en el helper, es posible
 añadir directamente objetos de la clase RegisteredUserPayment en una lista de objetos Payment
-porque RegisteredUserPayment hereda de Payment .
+porque RegisteredUserPayment hereda de Payment.
 
-Finalmente se llama a los métodos showPreviusPayment() y processNewPayments() ,donde el primer
+Finalmente, se llama a los métodos showPreviusPayment() y processNewPayments() ,donde el primer
 método imprimirá todos los pagos previos que hizo el usuario con el método previousPaymentInfo()
 de los objetos de la lista payments y el otro método imprimirá el nuevo pago que se está
-realizando con el método newPayment(), ambos usarán bucles for para imprimir lo datos de todos
-los objetos de las lista payments.
+realizando con el método newPayment(), ambos usarán bucles for para imprimir los datos de todos
+los objetos de la lista payments.
 
 </ul>
 
@@ -565,10 +566,9 @@ la siguiente línea de código “ throw new UnsupportedOperationException();”
 
 </details>
 
-
 #### Pregunta 14 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
-Dentro del método **main()**, utilizas una instancia de usuario invitado e intentas
+Dentro del método `main()`, utilizas una instancia de usuario invitado e intentas
 usar su clase auxiliar de la misma manera, ¿Qué tipo de excepción te encuentras? ¿Cuál es la
 solución?
 
@@ -577,25 +577,25 @@ solución?
   <summary>Respuesta</summary>
 <ul>
 Se intención un objeto de la clase GuestUserPayment llamado guestUser el cual se añade a
-la lista que tiene helper usando su método addUser() .Al ejecutar la clase Client , se
+la lista que tiene helper usando su método addUser(). Al ejecutar la clase Client, se
 muestra en la salida la ejecución del método previousPaymentInfo() que tiene los objetos
-pagoAbejita y pagoChalito pero luego muestra una excepción  evitando que se imprima lo
+pagoAbejita y pagoChalito, pero luego muestra una excepción evitando que se imprima lo
 que se vio en la pregunta 12.
 
 Esta excepción se genera porque en el método showPreviousPayments() del objeto helper de
 la clase PaymentHelper ejecuta los métodos previousPaymentInfo() de cada objeto de la
 lista payments, en donde se encuentra nuestro objeto guestUser el cual en este método ejecuta
-la línea de código “ throw new UnsupportedOperationException();” , el cual retornará una
+la línea de código `throw new UnsupportedOperationException();` , el cual retornará una
 excepción siendo esta la razón por la que ocurre este problema.
 
 La forma de solucionar este problema es sería que se creen 2 interfaces, una que sea
 para registrar los anteriores pagos y otro para registrar el pago actual, y esta vez la
 clase RegisteredUserPayment implementará ambas interfaces ya que esta clase registra
-pagos anteriores y acutales, pero GuestUserPayment tiene que implementar solo la interface
-para solo registro del pago actual ya que esta clase fue creada solo para registrar pagos
-actuales. Además se deberá de modificar la clase Payment Helper,esta vez en lugar de guardar
-a lodos los usuarios en usa sola lista ahora se creará dos lista , una para objetos que
-hereden de las primera interfaz y otra lista de los que heredan de la otra interfaz , por
+pagos anteriores y acutales, pero GuestUserPayment tiene que implementar solo la interfaz
+para registro del pago actual, ya que esta clase fue creada solo para registrar pagos
+actuales. Además, se deberá de modificar la clase Payment Helper,esta vez en lugar de guardar
+a lodos los usuarios en una sola lista ahora se generará dos lista, una para objetos que
+hereden de la primera interfaz y otra lista de los que heredan de la otra interfaz, por
 lo que ahora el método showPreviousPayments() solo ejecutaría el método previousPaymentInfo()
 de la lista delos usuarios que tengan guardados sus pagos anteriores mientras que el método
 processNewPayments() solo ejecutará los métodos newPaymet de las clases que usan la interfaz de solo nuevos pagos.
@@ -605,7 +605,7 @@ processNewPayments() solo ejecutará los métodos newPaymet de las clases que us
 
 #### Pregunta 15 [[@Bobter](https://github.com/Bobter)]
 
-Todo lo anterior Lo más importante es que viola el **OCP** cada vez que modifica una
+Todo lo anterior Lo más importante es que viola el `OCP` cada vez que modifica una
 clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor solución.
 <details>
   <summary>Respuesta</summary>
@@ -616,15 +616,15 @@ clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor sol
 
 #### Pregunta 16 [[@Bobter](https://github.com/Bobter)]
 
-En el próximo programa, eliminaremos el método **newPayment()** de la interfaz de
-**payment**. Coloca este método en otra interfaz llamada **NewPayment**. Como resultado, ahora
+En el próximo programa, eliminaremos el método `newPayment()` de la interfaz de
+`payment`. Coloca este método en otra interfaz llamada `NewPayment`. Como resultado, ahora
 tienes dos interfaces con las operaciones específicas. Dado que todos los tipos de usuarios
-pueden generar una nueva solicitud de pago, las clases concretas de **RegisteredUserPayment** y
-**GuestUserPayment** implementan la interfaz **NewPayment**.
+pueden generar una nueva solicitud de pago, las clases concretas de `RegisteredUserPayment` y
+`GuestUserPayment` implementan la interfaz `NewPayment`.
 Pero muestra el último detalle de pago solo para los usuarios registrados. Entonces, la clase
-**RegisteredUser** implementa la interfaz **payment**. Dado que **Payment** contiene el método
-**previousPaymentInfo()**, tiene sentido elegir un nombre mejor, como **PreviousPaymen** en lugar
-de **Payment**. Entonces, ahora verá las siguientes interfaces:
+`RegisteredUser` implementa la interfaz `payment`. Dado que `Payment` contiene el método
+`previousPaymentInfo()`, tiene sentido elegir un nombre mejor, como `PreviousPaymen` en lugar
+de `Payment`. Entonces, ahora verá las siguientes interfaces:
 
 ```java
 interface PreviousPayment {
@@ -818,7 +818,7 @@ y los nuevos:
         List<NewPayment> newPayments=new ArrayList<NewPayment>();
 ```
 
-Otra modificación importante a <b>PaymentHelper</b> se dió en los métodos, para esto se usaron los nombres que eran
+Otra modificación importante a <b>PaymentHelper</b> se dio en los métodos, para esto se usaron los nombres que eran
 llamados en la clase <b>Cliente</b>:
 
 <li>Antes: </li>
@@ -929,7 +929,7 @@ La clase <b>Cliente</b> se nos entregó modificada, los cambios se notan a la ho
 
 #### Pregunta 18 [[@Bobter](https://github.com/Bobter)]
 
-Ten que aquí el enfoque clave estaba en el principio **LSP**, nada más. Podrías
+Ten que aquí el enfoque clave estaba en el principio `LSP`, nada más. Podrías
 refactorizar fácilmente el código del cliente usando algún método estático. Por ejemplo realiza
 una modificación donde utilizas un método estático para mostrar todas las solicitudes de pago
 y utilizar este método siempre que lo necesites.
@@ -992,10 +992,10 @@ Procesando el pago actual de guest
 ¿Por qué un usuario necesita cambiar una clase base (o una interfaz)? Para
 responder a esto, supongamos que deseas mostrar qué el tipo de fax está utilizando en una fase
 de desarrollo posterior.
-Tú sabes que existen diferentes variaciones de métodos de **fax**, como *LanFax*, *InternetFax (o
-EFax*) y *AnalogFax*. Entonces, antes, el método **SendFax()** no usaba ningún parámetro, pero
+Tú sabes que existen diferentes variaciones de métodos de `fax`, como *LanFax*, *InternetFax (o
+EFax*) y *AnalogFax*. Entonces, antes, el método `SendFax()` no usaba ningún parámetro, pero
 ahora necesita aceptar un parámetro para mostrar el tipo de fax que usa. Escribe una jerarquía
-de **fax** que puede parecerse a la siguiente:
+de `fax` que puede parecerse a la siguiente:
 
 ```java
 interface Fax {
@@ -1016,59 +1016,62 @@ class EFax implements Fax {
 <details>
   <summary>Respuesta</summary>
 <ul>
-Creamos la siguiente jerarquía con las 3 clases que se nos meciona :*LanFax*, *InternetFax (o
-EFax*) y *AnalogFax* .
+Creamos la siguiente jerarquía con las 3 clases que se nos meciona:<b>LanFax</b>, <b>InternetFax</b> (o
+<b>EFax</b>) y <b>AnalogFax</b>.
 
 ```java
-interface  Fax {
+interface Fax {
     public void sendFax();
 }
-class LanFax implements  Fax{
+
+class LanFax implements Fax {
     @Override
-    public void sendFax(){
+    public void sendFax() {
         System.out.println("Usando lan fax para mandar un fax");
     }
 }
-class EFax implements  Fax{
+
+class EFax implements Fax {
     @Override
-    public void sendFax(){
+    public void sendFax() {
         System.out.println("Usando internet fax para mandar un fax");
     }
 }
 
-class AnalgoFax implements  Fax{
+class AnalgoFax implements Fax {
     @Override
-    public void sendFax(){
+    public void sendFax() {
         System.out.println("Usando Analog fax para mandar un fax.");
     }
 }
 ```
+
 Se crea una interfaz base llamada Fax la cual contiene un método void llamado faxType()
 que posteriormente se usará para que imprima un texto que diga el tipo de fax que corresponde,
-después creamos las 3 clases que heredan de esta interfaz llamados LanFax,EFax y AnalogFax.
-La clase LanFax sobrescribirá el método  faxType() para que imprima el texto "Usando lan fax
+después creamos las 3 clases que heredan de esta interfaz llamada LanFax, EFax y AnalogFax.
+La clase LanFax sobrescribirá el método faxType() para que imprima el texto "Usando lan fax
 para mandar un fax.", la clase EFax sobrescribirá el mismo método para que imprima "Usando
-internet fax para mandar un fax." Y la clase AnalogFaz  imprimirá el texto "Usando Analog fax para mandar un fax.".
+internet fax para mandar un fax." Y la clase AnalogFaz imprimirá el texto "Usando Analog fax para mandar un fax.".
 
 </ul>
 </details>
 
 #### Pregunta 20[[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
-Para usar esta jerarquía de herencia, una vez que modificas el método **sendFax()** a
-**sendFax(Fax faxType)** en la clase **ImpresoraAvanzada**, exige que cambies la interfaz de
-**Impresora** (sí, aquí también rompe el **OCP**).
-Cuando actualices **Impresora**, también debes actualizar la clase **impresoraBasica** para
+Para usar esta jerarquía de herencia, una vez que modificas el método `sendFax()` a
+`sendFax(Fax faxType)` en la clase `ImpresoraAvanzada`, exige que cambies la interfaz de
+`Impresora` (sí, aquí también rompe el `OCP`).
+Cuando actualices `Impresora`, también debes actualizar la clase `impresoraBasica` para
 adaptarse a este cambio. ¡Ahora ves el problema!. Explica el problema.
 
 <details>
   <summary>Respuesta</summary>
 <ul>
 Cuando actualizamos el método sendFax() de la clase ImpresoraAvanzada nos pide modificar la clase
-base Impresora y la clase ImpresoraBásica ,por lo que el problema es que al momento que queríamos
+base Impresora y la clase ImpresoraBásica, por lo que el problema es que al momento que queríamos
 hacer el cambio en un solo método en la clase ImpresoraAvanzada se pedirá el mismo cambio para la
-clase ImpresoraBásica pero nuestro objetivo no es cambiar esta clase , además esta este tipo de
-impresora no necesita de este cambio porque no puede mandar ningún tipo de fax. Además otro problema
+clase ImpresoraBásica, pero nuestro objetivo no es cambiar esta clase, además esta este tipo de
+impresora no necesita de este cambio porque no puede mandar ningún tipo de fax. Además, otro problema
 es que en la clase cliente también se usa el método sendFax() pero no hay ninguna instancia de objeto
 de alguna clase de tipo de fax que se pueda usar como parámetro para este método.
 </ul>
@@ -1076,21 +1079,20 @@ de alguna clase de tipo de fax que se pueda usar como parámetro para este méto
 
 #### Pregunta 21[[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
-Si has entendido correctamente el problema. El **ISP** te sugiere que te ocupes de
+Si has entendido correctamente el problema. El `ISP` te sugiere que te ocupes de
 este tipo de escenario. Explica tu respuesta.
 
 <details>
   <summary>Respuesta</summary>
 <ul>
-La forma de solucionar este problema sería creando 2 interfaces , una que contenga el
-método printDocument() ,que se usará en todas las impresoras ya sea básica o avanzada,
-y otra que contenga el método sendFax() ,que solo será usada en impresoras avanzadas, de
+La forma de solucionar este problema sería creando 2 interfaces, una que contenga el
+método printDocument(), que se usará en todas las impresoras ya sea básica o avanzada,
+y otra que contenga el método sendFax(), que solo será usada en impresoras avanzadas, de
 esta forma la clase impresoraBásica solo heredaría de la primera interfaz porque solo necesita
-del método printDocument(),mientras que la clase impresoraAvanzada heredaría de ambas interfaces
+del método printDocument(), mientras que la clase impresoraAvanzada heredaría de ambas interfaces
 porque necesita ambos métodos. 
 </ul>
 </details>
-
 
 #### Pregunta 22 [[@Bobter](https://github.com/Bobter)]
 
@@ -1106,7 +1108,7 @@ interface Impresora {
 
 <details>
   <summary>Respuesta</summary>
-<ul> Antes de afirmar o negar algo respecto a este punto debemos de tener en cuenta que es importante que las interface posean métodos que puedan ser usados por todas las clases a las que se implementen, a partir de esto podemos decir que no es conveniente, ya que como muchos puedo afirmar que la impresora que tengo en casa no envía fax, que si es algo que llevamos a código e implementamos la interface <b>Impresora</b> que se nos presentó en la pregunta nos va a causar una excepción, otro ejemplo de esto sería un supuesto en el que en la interface <b>Impresora</b> tenemos el método escanear, método que causaría también excepciones ya que no todas las impresoras poseen un escáner. Si nosotros usamos la interface tal y como se nos presenta en la pregunta deberíamos modificar las otras clases que tenemos, pero debemos de tener el cuenta el <b>OCP</b> ya que no podemos modificar los métodos ya existentes en las clases.
+<ul> Antes de afirmar o negar algo respecto a este punto debemos de tener en cuenta que es importante que las interfaz posean métodos que puedan ser usados por todas las clases a las que se implementen, a partir de esto podemos decir que no es conveniente, ya que como muchos puedo afirmar que la impresora que tengo en casa no envía fax, que si es algo que llevamos a código e implementamos la interface <b>Impresora</b> que se nos presentó en la pregunta nos va a causar una excepción, otro ejemplo de esto sería un supuesto en el que en la interface <b>Impresora</b> tenemos el método escanear, método que causaría también excepciones, ya que no todas las impresoras poseen un escáner. Si nosotros usamos la interfaz tal y como se nos presenta en la pregunta deberíamos modificar las otras clases que tenemos, pero debemos de tener el cuenta el <b>OCP</b> ya que no podemos modificar los métodos ya existentes en las clases.
 </ul>
 </details>
 
@@ -1117,12 +1119,12 @@ imprimir y enviar un fax, está bien. Pero en una etapa posterior, si tu program
 necesita admitir impresoras básicas, ¿Qué código puedes escribir?,
 ¡Ya has visto que este código puede causarte un problema potencial!
 Está bastante claro que una impresora básica no necesita enviar un fax. Pero dado que
-**ImpresoraBasica** implementa **Impresora**, debe proporcionar una implementación de **sendFax()**.
-Como resultado, cuando **sendFax()** cambia en la interfaz **Impresora**, **ImpresoraBasica** necesita
-adaptarse al cambio. El **ISP** sugiere que evites este tipo de situaciones.
+`ImpresoraBasica` implementa `Impresora`, debe proporcionar una implementación de `sendFax()`.
+Como resultado, cuando `sendFax()` cambia en la interfaz `Impresora`, `ImpresoraBasica` necesita
+adaptarse al cambio. El `ISP` sugiere que evites este tipo de situaciones.
 En este contexto, Cuando lanzas la excepción e intentas usar código polimórfico de manera
-incorrecta, ves el impacto de violar el **LSP**. Una vez que modificas **Impresora**, también viola el
-**OCP**.
+incorrecta, ves el impacto de violar el `LSP`. Una vez que modificas `Impresora`, también viola el
+`OCP`.
 <details>
   <summary>Respuesta</summary>
 <ul> Para esto podemos separar la interface <b>Impresora</b>, en 2 interface <b>Impresora</b> y <b>Fax</b> de la siguiente manera:
@@ -1157,7 +1159,7 @@ interface Escaner {
 }
 ```
 
-Con esto ya podríamos usar las combinaciones de interface para no tener problemas con las impresoras que se usen en
+Con esto ya podríamos usar las combinaciones de interfaz para no tener problemas con las impresoras que se usen en
 nuestro código.
 
 </ul>
@@ -1165,7 +1167,7 @@ nuestro código.
 
 #### Pregunta 24 [[@Bobter](https://github.com/Bobter)]
 
-Comprueba tus respuestas añadiendo dentro de **main()**, el siguiente código
+Comprueba tus respuestas añadiendo dentro de `main()`, el siguiente código
 polimórfico:
 
 ```java
@@ -1213,7 +1215,7 @@ class Cliente {
 }
 ```
 
-Como se observa la impresora avanzada debe ser declarada como tal ya que si la declaramos como <b>Impresora</b>
+Como se observa la impresora avanzada debe ser declarada como tal, ya que si la declaramos como <b>Impresora</b>
 tendríamos el problema que no se podría usar el método <b>sendFax()</b>.
 De esta forma ya obtendríamos una salida correcta:
 
@@ -1415,27 +1417,27 @@ interface Fax {
 #### Pregunta 27 [[@Overglitch](https://github.com/Overglitch)]
 
 Supongamos que necesitas admitir otra impresora que pueda imprimir, enviar
-faxes y fotocopiar. En este caso, si agregas un método de fotocopiado en la interfaz **Impresora**,
-los dos clientes existentes, **ImpresoraBasica** e **ImpresoraAvanzada**, deben adaptarse al cambio.
+faxes y fotocopiar. En este caso, si agregas un método de fotocopiado en la interfaz `Impresora`,
+los dos clientes existentes, `ImpresoraBasica` e `ImpresoraAvanzada`, deben adaptarse al cambio.
 Busquemos una mejor solución. Hay dos actividades diferentes: una es imprimir unos documentos y la otra es enviar un
-fax. Crea dos interfaces llamada **Impresora** y **DispositivoFax**. Impresora contiene el método
-**printDocument()** y **DispositivoFax** contiene el método **SendFax()**. La idea es sencilla:
+fax. Crea dos interfaces llamadas `Impresora` y `DispositivoFax`. Impresora contiene el método
+`printDocument()` y `DispositivoFax` contiene el método `SendFax()`. La idea es sencilla:
 
-- La clase que desea la función de impresión implementa la interfaz **Impresora** y la clase
-  que desea la función de fax implementa la interfaz **DispositivoFax**.
+- La clase que desea la función de impresión implementa la interfaz `Impresora` y la clase
+  que desea la función de fax implementa la interfaz `DispositivoFax`.
 - Si una clase quiere ambas funcionalidades, implementa ambas interfaces.
 
-No debes asumir que el **ISP** dice que una interfaz debe tener solo un método. En este ejemplo
-hay dos métodos en la interfaz de **Impresora** y la clase **ImpresoraBasica** necesita únicamente uno de
+No debes asumir que el `ISP` dice que una interfaz debe tener solo un método. En este ejemplo
+hay dos métodos en la interfaz de `Impresora` y la clase `ImpresoraBasica` necesita únicamente uno de
 ellos. Es por eso que ves las interfaces segregadas con solamente un método.
-Para terminar esta pregunta, en la sección de **SOLID** del código entregado, completa los
+Para terminar esta pregunta, en la sección de `SOLID` del código entregado, completa los
 siguientes archivos. No olvides explicar tus resultados.
 
-- **Impresora.java**
-- **DispositivoFax.java**
-- **ImpresoraBasica.java**
-- **ImpresoraAvanzada.java**
-- **Cliente.java**
+- `Impresora.java`
+- `DispositivoFax.java`
+- `ImpresoraBasica.java`
+- `ImpresoraAvanzada.java`
+- `Cliente.java`
 
 <details>
   <summary>Respuesta</summary>
@@ -1545,7 +1547,7 @@ problemas.
 @Override
 public void sendFax(){
         throw new UnsupportedOperationException();
-            }
+        }
 ```
 
 Cada vez que añades un método en la clase base, las clases derivadas pueden usar el método entonces en caso de que se
@@ -1577,9 +1579,9 @@ se envio o no un fax.
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
-- **InterfaceUsuario.java**
-- **OracleDataBase.java**
-- **Cliente.java**
+- `InterfaceUsuario.java`
+- `OracleDataBase.java`
+- `Cliente.java`
 
 <details>
 <summary>Respuesta</summary>
@@ -1604,19 +1606,19 @@ El programa es simple, pero ¿Qué tipo de problemas presenta?
 
 #### Pregunta 33 [[@Bobter](https://github.com/Bobter)]
 
-En el programa de la carpeta **SOLID**, para el caso **DIP** verás la siguiente jerarquía:
+En el programa de la carpeta `SOLID`, para el caso `DIP` verás la siguiente jerarquía:
 
 - **BaseDatos.java**
 - **OracleDatabase.java**
 
-La primera parte del **DIP** sugiere que nos centramos en la abstracción. Esto hace que el
-programa sea eficiente. Entonces, esta vez la clase **InterfazUsuario** tiene como objetivo la base
-de datos de abstracción, en lugar de una implementación concreta como **OracleDatabase**.
-Implementa la clase **InterfazUsuario**.
+La primera parte del `DIP` sugiere que nos centramos en la abstracción. Esto hace que el
+programa sea eficiente. Entonces, esta vez la clase `InterfazUsuario` tiene como objetivo la base
+de datos de abstracción, en lugar de una implementación concreta como `OracleDatabase`.
+Implementa la clase `InterfazUsuario`.
 Esto brinda la flexibilidad de considerar una nueva base de datos, como MYSQLDatabase
 también.
-La segunda parte del **DIP** propone hacer la interfaz de la base de datos considerando la
-necesidad de la clase **InterfazUsuario**.
+La segunda parte del `DIP` propone hacer la interfaz de la base de datos considerando la
+necesidad de la clase `InterfazUsuario`.
 Es importante porque si una interfaz necesita cambiar para admitir a uno de sus clientes, otros
 clientes pueden verse afectados por el cambio.
 <details>
@@ -1664,7 +1666,7 @@ class InterfazUsuario {
 
 #### Pregunta 34 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
-Completa todos los archivos siguientes de la sección **SOLID**
+Completa todos los archivos siguientes de la sección `SOLID`
 
 - **InterfazUsuario.java**
 - **BaseDatos.java**
@@ -1672,10 +1674,9 @@ Completa todos los archivos siguientes de la sección **SOLID**
 - **MySQLDatabase.java**
 - **Cliente.java**
 
-
 Explica los resultados. ¿El programa resuelve todos los posibles problemas del programa que
-no usa **DIP**?
-En resumen, en **OOP**, te sugiero seguir la cita de ***Robert C. Martin***:
+no usa `DIP`?
+En resumen, en `OOP`, te sugiero seguir la cita de `*Robert C. Martin`*:
 > "Los módulos de alto nivel simplemente no deberían depender de los módulos de bajo nivel de
 > ninguna manera. Entonces, cuando tienes una clase base y una clase derivada, tu clase base no debe conocer
 > ninguna de sus clases derivadas."
@@ -1683,11 +1684,11 @@ En resumen, en **OOP**, te sugiero seguir la cita de ***Robert C. Martin***:
 <details>
   <summary>Respuesta</summary>
 <ul>
-Se usa la interfaz BaseDatos como base para crear las dos clases de base de datos llamadas  MySQLDatabase
-y OracleDatabase .BaseDatos tiene el método  saveEmpIdInDatabase(…) el cual imprime un mensaje con la id
+Se usa la interfaz BaseDatos como base para crear las dos clases de base de datos llamadas MySQLDatabase
+y OracleDatabase. BaseDatos tiene el método saveEmpIdInDatabase(…) el cual imprime un mensaje con la id
 del usuario anunciando que se guardó su id en la base de datos, también pide de parámetro un string llamado
-empid el cual será la id de usuario , en el caso de la clase MySQLDatabase imprime "El id:  empId  es
-guardado en la base de datos MySQL." y la clase OracleDatabase imprime "El id: empId  es guardado en la
+empid el cual será la id de usuario, en el caso de la clase MySQLDatabase imprime "El id: empId es
+guardado en la base de datos MySQL." y la clase OracleDatabase imprime "El id: empId es guardado en la
 base de datos Oracle."
 
 ```java
@@ -1696,13 +1697,13 @@ interface BaseDatos {
 }
 
 class OracleDatabase implements BaseDatos {
-    public void saveEmpIdInDatabase(String empId){
+    public void saveEmpIdInDatabase(String empId) {
         System.out.println("El id: " + empId + " es guardado en la base de datos Oracle.");
     }
 }
 
 class MySQLDatabase implements BaseDatos {
-    public void saveEmpIdInDatabase(String empId){
+    public void saveEmpIdInDatabase(String empId) {
         System.out.println("El id: " + empId + " es guardado en la base de datos MySQL.");
     }
 }
@@ -1717,22 +1718,24 @@ parámetro del método saveEmpIdInDatabase(…) de la base de datos guardada.
 
 ```java
 class InterfazUsuario {
-  private BaseDatos baseDatos ;
+    private BaseDatos baseDatos;
 
-  public InterfazUsuario(BaseDatos baseDatos) {
-      this.baseDatos= baseDatos;
-  }
-  public void saveEmployeeId(String empId) {
-      baseDatos.saveEmpIdInDatabase(empId);
-  }
+    public InterfazUsuario(BaseDatos baseDatos) {
+        this.baseDatos = baseDatos;
+    }
+
+    public void saveEmployeeId(String empId) {
+        baseDatos.saveEmpIdInDatabase(empId);
+    }
 }
 ```
+
 Finalmente, en la clase Cliente Creamos un objeto de clase BaseDatos llamado baseDatos y lo igualamos a un
-nuevo objeto de clase OracleDatabase , después creamos un objeto de tipo InterfazUsuario y le colocaremos en
-el parámetro del constructor la base de datos anterior, luego el interfaz de usuario usará el método saveEmployeeId(..)
-con el id E001 lo que hace que imprima “El id: E001 es guardado en la base de datos Oracle”. Después al objeto base
-datos lo igualamos a un nuevo objeto de tipo MySQLDatabase , a la interfaz de usuario la volvemos a crear pero esta vez
-con la nueva base de datos en el parámetro, pero esta vez al usar el método  saveEmployeeId(..) le asignamos el id
+nuevo objeto de clase OracleDatabase, después creamos un objeto de tipo InterfazUsuario y le colocaremos en
+el parámetro del constructor la base de datos anterior, luego la interfaz de usuario usará el método saveEmployeeId(..)
+con el id E001 lo que hace que imprima “El id: E001 es guardado en la base de datos Oracle”. Posteriormente, al objeto base
+datos lo igualamos a un nuevo objeto de tipo MySQLDatabase , a la interfaz de usuario la volvemos a crear, pero esta vez
+con la nueva base de datos en el parámetro, pero esta vez al usar el método saveEmployeeId(..) le asignamos el id
 E002 por lo que imprimirá “El id: E002 es guardado en la base de datos MySQL.”
 
 ```java
@@ -1743,7 +1746,7 @@ public class Cliente {
         BaseDatos baseDatos = new OracleDatabase();
         InterfazUsuario interfazUsuario = new InterfazUsuario(baseDatos);
         interfazUsuario.saveEmployeeId("E001");
-        
+
         // Usando Mysql
         baseDatos = new MySQLDatabase();
         interfazUsuario = new InterfazUsuario(baseDatos);
@@ -1751,15 +1754,16 @@ public class Cliente {
     }
 }
 ```
+
 al ejecutar el código tendría la sigueinte salida.
+
 ```console
 El id: E001 es guardado en la base de datos Oracle.
 El id: E002 es guardado en la base de datos MySQL.
 ```
+
 </ul>
 </details>
-
-
 
 #### Pregunta 35 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
@@ -1767,7 +1771,7 @@ Encuentra alguna excepción a esta sugerencia.
 <details>
   <summary>Respuesta</summary>
 <ul>
-Una forma de que una clase padre A pueda conocer información de sus  clase hijas es que esta es que la
+Una forma de que una clase padre A pueda conocer información de sus clase hijas es que esta es que la
 clase padre se instancie y este sea un creador de otros objetos de clases hijos y que los almacene en un
 array de objetos de clase A, de esta forma tendría información de objetos de sus clases hijas.
 </ul>
@@ -1775,9 +1779,9 @@ array de objetos de clase A, de esta forma tendría información de objetos de s
 
 #### Pregunta 36 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
-El constructor de la clase **InterfazUsuario** acepta un parámetro de base de datos.
+El constructor de la clase `InterfazUsuario` acepta un parámetro de base de datos.
 Proporciona una instalación adicional a un usuario cuando utiliza tanto el constructor como el
-método setter (**setDatabase**) dentro de esta clase. ¿Cuál es el beneficio?
+método setter (`setDatabase`) dentro de esta clase. ¿Cuál es el beneficio?
 <details>
   <summary>Respuesta</summary>
 <ul>
@@ -1795,7 +1799,7 @@ public class Cliente {
         BaseDatos baseDatos = new OracleDatabase();
         InterfazUsuario interfazUsuario = new InterfazUsuario(baseDatos);
         interfazUsuario.saveEmployeeId("E001");
-        
+
         // Usando Mysql
         baseDatos = new MySQLDatabase();
         interfazUsuario.setDataBase(baseDatos);
@@ -1803,9 +1807,10 @@ public class Cliente {
     }
 }
 ```
+
 </ul>
 </details>
 
-*********
+````*
 
 ![Alt Text](https://media.giphy.com/media/wwg1suUiTbCY8H8vIA/giphy-downsized-large.gif)
