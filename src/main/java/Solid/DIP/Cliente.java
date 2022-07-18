@@ -15,10 +15,6 @@ public class Cliente {
         interfazUsuario = new InterfazUsuario(baseDatos);
         interfazUsuario.saveEmployeeId("E002");
 
-        // Cambiando la base de datos objetivo
-        //usuario = new InterfazUsuario(new OracleDatabase());
-
-
 
     }
 }
