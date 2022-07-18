@@ -1640,7 +1640,7 @@ El id: E002 es guardado en la base de datos MySQL.
 
 
 
-#### Pregunta 35
+#### Pregunta 35 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Encuentra alguna excepción a esta sugerencia.
 <details>
