@@ -6,6 +6,19 @@ interface  Fax {
 class LanFax implements  Fax{
     @Override
     public void sendFax(){
-        System.out.println("La impresora basica imprime un documento.");
+        System.out.println("Usando lan fax para mandar un fax");
+    }
+}
+class EFax implements  Fax{
+    @Override
+    public void sendFax(){
+        System.out.println("Usando internet fax para mandar un fax");
+    }
+}
+
+class AnalgoFax implements  Fax{
+    @Override
+    public void sendFax(){
+        System.out.println("Usando Analog fax para mandar un fax.");
     }
 }
