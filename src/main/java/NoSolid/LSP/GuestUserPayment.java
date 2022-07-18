@@ -1,6 +1,6 @@
 package NoSolid.LSP;
 
-/*public class GuestUserPayment implements Payment{
+public class GuestUserPayment implements Payment{
     String name;
     public GuestUserPayment() {
         this.name = "guest";
@@ -16,5 +16,5 @@ package NoSolid.LSP;
         System.out.println("Procesando de "+name+ "pago actual request.");
     }
 
-}*/
+}
 
