@@ -4,8 +4,6 @@
 
 ## Práctica Calificada 3
 
-<div style="text-align: center;"><a href="https://github.com/HOMTechUNI"><img src="https://github.com/HOMTechUNI/PC3/blob/main/content/images/hom-tech.svg" alt=""></a></div>
-
 **TABLA DE CONTENIDO**
 
 - [Principio de responsabilidad única](https://github.com/HOMTechUNI/PC3#principio-de-responsabilidad-%C3%BAnica)
@@ -1807,3 +1805,5 @@ public class Cliente {
 ```
 </ul>
 </details>
+
+<iframe src="https://giphy.com/embed/THDBkIhJ42uqjXxXAs" width="480" height="319" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/THDBkIhJ42uqjXxXAs"></a></p>
