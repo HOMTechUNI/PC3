@@ -9,12 +9,9 @@ public class Cliente {
         InterfazUsuario interfazUsuario = new InterfazUsuario(baseDatos);
         interfazUsuario.saveEmployeeId("E001");
 
-
         // Usando Mysql
         baseDatos = new MySQLDatabase();
         interfazUsuario = new InterfazUsuario(baseDatos);
         interfazUsuario.saveEmployeeId("E002");
-
-
     }
 }

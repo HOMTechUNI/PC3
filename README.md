@@ -8,11 +8,11 @@
 
 - [Principio de responsabilidad única](https://github.com/HOMTechUNI/PC3#principio-de-responsabilidad-%C3%BAnica)
     - [Pregunta 1](https://github.com/HOMTechUNI/PC3#pregunta-1)
-    - [Pregunta 2](https://github.com/HOMTechUNI/PC3#pregunta-2)
+    - [Pregunta 2](https://github.com/HOMTechUNI/PC3#pregunta-2--bobter-)
     - [Pregunta 3](https://github.com/HOMTechUNI/PC3#pregunta-3--overglitch-)
     - [Pregunta 4](https://github.com/HOMTechUNI/PC3#pregunta-4--overglitch-)
 - [Principio abierto/cerrado](https://github.com/HOMTechUNI/PC3#principio-abiertocerrado)
-    - [Pregunta 5](https://github.com/HOMTechUNI/PC3#pregunta-5)
+    - [Pregunta 5](https://github.com/HOMTechUNI/PC3#pregunta-5--bobter-)
     - [Pregunta 6](https://github.com/HOMTechUNI/PC3#pregunta-6)
     - [Pregunta 7](https://github.com/HOMTechUNI/PC3#pregunta-7)
     - [Pregunta 8](https://github.com/HOMTechUNI/PC3#pregunta-8)
@@ -23,19 +23,19 @@
     - [Pregunta 12](https://github.com/HOMTechUNI/PC3#pregunta-12)
     - [Pregunta 13](https://github.com/HOMTechUNI/PC3#pregunta-13)
     - [Pregunta 14](https://github.com/HOMTechUNI/PC3#pregunta-14)
-    - [Pregunta 15](https://github.com/HOMTechUNI/PC3#pregunta-15)
-    - [Pregunta 16](https://github.com/HOMTechUNI/PC3#pregunta-16)
-    - [Pregunta 17](https://github.com/HOMTechUNI/PC3#pregunta-17)
-    - [Pregunta 18](https://github.com/HOMTechUNI/PC3#pregunta-18)
+    - [Pregunta 15](https://github.com/HOMTechUNI/PC3#pregunta-15--bobter-)
+    - [Pregunta 16](https://github.com/HOMTechUNI/PC3#pregunta-16--bobter-)
+    - [Pregunta 17](https://github.com/HOMTechUNI/PC3#pregunta-17--bobter-)
+    - [Pregunta 18](https://github.com/HOMTechUNI/PC3#pregunta-18--bobter-)
 - [Principio de segregación de interfaces](https://github.com/HOMTechUNI/PC3#principio-de-segregaci%C3%B3n-de-interfaces)
     - [Pregunta 19](https://github.com/HOMTechUNI/PC3#pregunta-19)
     - [Pregunta 20](https://github.com/HOMTechUNI/PC3#pregunta-20)
     - [Pregunta 21](https://github.com/HOMTechUNI/PC3#pregunta-21)
-    - [Pregunta 22](https://github.com/HOMTechUNI/PC3#pregunta-22)
-    - [Pregunta 23](https://github.com/HOMTechUNI/PC3#pregunta-23)
-    - [Pregunta 24](https://github.com/HOMTechUNI/PC3#pregunta-24)
-    - [Pregunta 25](https://github.com/HOMTechUNI/PC3#pregunta-25)
-    - [Pregunta 26](https://github.com/HOMTechUNI/PC3#pregunta-26)
+    - [Pregunta 22](https://github.com/HOMTechUNI/PC3#pregunta-22--bobter-)
+    - [Pregunta 23](https://github.com/HOMTechUNI/PC3#pregunta-23--bobter-)
+    - [Pregunta 24](https://github.com/HOMTechUNI/PC3#pregunta-24--bobter-)
+    - [Pregunta 25](https://github.com/HOMTechUNI/PC3#pregunta-25--bobter-)
+    - [Pregunta 26](https://github.com/HOMTechUNI/PC3#pregunta-26--bobter-)
     - [Pregunta 27](https://github.com/HOMTechUNI/PC3#pregunta-27)
     - [Pregunta 28](https://github.com/HOMTechUNI/PC3#pregunta-28)
     - [Pregunta 29](https://github.com/HOMTechUNI/PC3#pregunta-29)
@@ -43,14 +43,14 @@
 - [Principio de inversión de dependencias](https://github.com/HOMTechUNI/PC3#principio-de-inversi%C3%B3n-de-dependencia)
     - [Pregunta 31](https://github.com/HOMTechUNI/PC3#pregunta-31)
     - [Pregunta 32](https://github.com/HOMTechUNI/PC3#pregunta-32)
-    - [Pregunta 33](https://github.com/HOMTechUNI/PC3#pregunta-33)
+    - [Pregunta 33](https://github.com/HOMTechUNI/PC3#pregunta-33--bobter-)
     - [Pregunta 34](https://github.com/HOMTechUNI/PC3#pregunta-34)
     - [Pregunta 35](https://github.com/HOMTechUNI/PC3#pregunta-35)
     - [Pregunta 36](https://github.com/HOMTechUNI/PC3#pregunta-36)
 
 ### [Principio de responsabilidad única](https://es.wikipedia.org/wiki/Principio_de_responsabilidad_%C3%BAnica)
 
-#### Pregunta 1
+#### Pregunta 1 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
@@ -96,7 +96,7 @@ de 5 años de experiencia.
 </ul>
 </details>
 
-#### Pregunta 2[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 2 [[@Bobter](https://github.com/Bobter)]
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 
@@ -206,7 +206,7 @@ alterar las implementadas.
 
 ### [Principio abierto/cerrado](https://es.wikipedia.org/wiki/Principio_de_abierto/cerrado)
 
-#### Pregunta 5[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 5 [[@Bobter](https://github.com/Bobter)]
 
 ¿Por qué no es correcto colocar **displayResult()** y **evaluateDistinction()** en la misma
 clase, como la siguiente?
@@ -237,17 +237,73 @@ Sean los siguientes archivos:
 - **DistinctionDecider.java**
 - **Cliente.java**
 
-#### Pregunta 6
+#### Pregunta 6 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
 <details>
   <summary>Respuesta</summary>
+<ul>
 
 ```console
-sdsgdfsgsdfg
+Demostracion sin OCP
+Resultados:
+Nombre: Irene
+Numero Regex: R1
+Dept:Ciencia de la Computacion.
+Marks:81.5
+*******
+Nombre: Jessica
+Numero Regex: R2
+Dept:Fisica
+Marks:72.0
+*******
+Nombre: Chalo
+Numero Regex: R3
+Dept:Historia
+Marks:71.0
+*******
+Nombre: Claudio
+Numero Regex: R4
+Dept:Literatura
+Marks:66.5
+*******
+Distinciones:
+R1 ha recibido una distincion en ciencias.
+R3 ha recibido una distincion en artes.
 ```
+La salida del código Cliente nos muestra los datos de 4 estudiantes, los datos mostrados
+son su nombre, número de registro, su especialidad y su nota, finalmente muestra un
+mensaje de los alumnos que consiguieron la distinción.
 
+La instancia de los estudiantes se obtiene mediante el método enrollStudents() el cual
+retorna una lista de objetos de la clase Estudiante, el cual instancia 4 objetos alumnos que
+serán añadidos a una lista de estudiantes. La primera alumna es Irene con número de registro
+R1, puntaje 81.5 y pertenece al departamento de ciencias de la computación . La segunda alumna
+es Jessica con número de registro R2, puntaje 72 y pertenece al departamento de Física, el
+tercer alumno es Chalo con número de registro R3 , puntaje 71 y pertenece al departamento de
+Historia.El último alumno es Claudio con número de registro  R4, puntaje 66.5 y pertenece al
+departamento de Literatura.
+
+En el método main de la clase Cliente se crea una lista de objetos estudiantes llamada enrolledStudens
+y se iguala al retorno del método enrollStudents() mencionando anteriormente, después de imprime
+los datos de cada uno de los estudiantes de la lista gracias a que la clase Estudiante tiene el
+método toString sobrescrito para poder imprimir los datos del estudiantes cuando se pone la instancia
+de esta clase en un string.
+
+Después de instancia un objeto de la clase DistinctionDecider el cual imprime el número de registro del
+estudiantes que a conseguido la distinción, si un alumno que pertenece a la facultad de ciencias (pertenece
+al departamento de ciencias de la computación y física) y tiene un puntaje mayor a 80 puntos entonces
+se imprimirá su código indicando que ganó la distinción caso contrario no imprime nada, lo mismo
+pasa para estudiantes de la facultad de arte (pertenecen al departamento de historia y literatura)
+pero tiene que tener un puntaje mayor a 70 puntos para que imprima la distinción.
+
+En este caso imprimirá la el número de registro de los alumnos Irene (R1) y Chalo (R3) debido a que Irene
+pertenece a la facultad de ciencias y tener puntaje mayora 80 y Chalo pertenece a la facultad de artes y
+su puntaje es mayor a 70.
+
+
+</ul>
 </details>
 
 #### Pregunta 7 [[@Overglitch](https://github.com/Overglitch)]
@@ -423,11 +479,55 @@ Esto fue posible gracias al buen uso de la herencia y los polimorismos.
 
 ### [Principio de sustitución de Liskov](https://es.wikipedia.org/wiki/Principio_de_sustituci%C3%B3n_de_Liskov)
 
-#### Pregunta 12
+#### Pregunta 12 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados
 
-#### Pregunta 13
+<details>
+  <summary>Respuesta</summary>
+<ul>
+
+```console
+Recuperando de Abejita, ultimos detalles de pagos.
+------
+Recuperando de Chalito, ultimos detalles de pagos.
+------
+Exception in thread "main" java.lang.UnsupportedOperationException
+	at NoSolid.LSP.GuestUserPayment.previousPaymentInfo(GuestUserPayment.java:11)
+	at NoSolid.LSP.PaymentHelper.showPreviousPayments(PaymentHelper.java:14)
+	at NoSolid.LSP.Cliente.main(Cliente.java:22)
+```
+
+Antes de mostrar la salida se tuvo que comentar las líneas de código “GuestUserPayment
+guestUser = new GuestUserPayment();” y “helper.addUser(guestUser);” porque la clase
+GuestUserPayment no está codificada aún.
+
+La salida muestra los últimos pagos de 2 usuarios , una llamada Abejita y otro llamado Chalito,
+además de las nuevas solicitudes de pagos de estos, pero al no haberse añadido nada aún no
+muestras estos pagos y solo mostrará un texto genérico inicial de llamada a la muestra del pagos
+anteriores y el actual.
+
+En la clase Cliente, en el método main se instancia un objeto de clase PaymentHelper llamaod
+helper, luego se instancia 2 objetos de la clase RegisteredUserPayment ,el cual hereda del interfaz
+Payment, estos objetos son llamados pagoAbejita y pagoChalito los cuales en su constructor se
+ingresa el string de sus nombres los cuales son Abejita y Chalito respectivamente .
+
+Después , con el objeto helper creado anteriormente usamos el método addUser() para añadir a
+los pagadores Abejita y  Chalito a la lista de objetos Paymernt que hay en el helper, es posible
+añadir directamente objetos de la clase RegisteredUserPayment en una lista de objetos Payment
+porque RegisteredUserPayment hereda de Payment .
+
+Finalmente se llama a los métodos showPreviusPayment() y processNewPayments() ,donde el primer
+método imprimirá todos los pagos previos que hizo el usuario con el método previousPaymentInfo()
+de los objetos de la lista payments y el otro método imprimirá el nuevo pago que se está
+realizando con el método newPayment(), ambos usarán bucles for para imprimir lo datos de todos
+los objetos de las lista payments.
+
+</ul>
+
+</details>
+
+#### Pregunta 13 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Ahora supongamos que tienes un nuevo requisito que dice que necesitas admitir
 usuarios invitados en el futuro. Puedes procesar la solicitud de pago de un usuario invitado,
@@ -454,13 +554,56 @@ class GuestUserPayment implements Payment {
 }
 ```
 
-#### Pregunta 14
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Creamos la clase GuestUserPayment que implementa la interfaz Payment, la cual en su constructor pone
+el string name el valores de “guest”, en el métodos newPayment() se imprime la cadena
+"Procesando de "+name+ "pago actual request." Y en el método previousPaymentInfo() ejecutará
+la siguiente línea de código “ throw new UnsupportedOperationException();”.
+</ul>
+
+</details>
+
+
+#### Pregunta 14 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Dentro del método **main()**, utilizas una instancia de usuario invitado e intentas
 usar su clase auxiliar de la misma manera, ¿Qué tipo de excepción te encuentras? ¿Cuál es la
 solución?
 
-#### Pregunta 15[[@Bobter](https://github.com/Bobter)]
+
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Se intención un objeto de la clase GuestUserPayment llamado guestUser el cual se añade a
+la lista que tiene helper usando su método addUser() .Al ejecutar la clase Client , se
+muestra en la salida la ejecución del método previousPaymentInfo() que tiene los objetos
+pagoAbejita y pagoChalito pero luego muestra una excepción  evitando que se imprima lo
+que se vio en la pregunta 12.
+
+Esta excepción se genera porque en el método showPreviousPayments() del objeto helper de
+la clase PaymentHelper ejecuta los métodos previousPaymentInfo() de cada objeto de la
+lista payments, en donde se encuentra nuestro objeto guestUser el cual en este método ejecuta
+la línea de código “ throw new UnsupportedOperationException();” , el cual retornará una
+excepción siendo esta la razón por la que ocurre este problema.
+
+La forma de solucionar este problema es sería que se creen 2 interfaces, una que sea
+para registrar los anteriores pagos y otro para registrar el pago actual, y esta vez la
+clase RegisteredUserPayment implementará ambas interfaces ya que esta clase registra
+pagos anteriores y acutales, pero GuestUserPayment tiene que implementar solo la interface
+para solo registro del pago actual ya que esta clase fue creada solo para registrar pagos
+actuales. Además se deberá de modificar la clase Payment Helper,esta vez en lugar de guardar
+a lodos los usuarios en usa sola lista ahora se creará dos lista , una para objetos que
+hereden de las primera interfaz y otra lista de los que heredan de la otra interfaz , por
+lo que ahora el método showPreviousPayments() solo ejecutaría el método previousPaymentInfo()
+de la lista delos usuarios que tengan guardados sus pagos anteriores mientras que el método
+processNewPayments() solo ejecutará los métodos newPaymet de las clases que usan la interfaz de solo nuevos pagos.
+
+</ul>
+</details>
+
+#### Pregunta 15 [[@Bobter](https://github.com/Bobter)]
 
 Todo lo anterior Lo más importante es que viola el **OCP** cada vez que modifica una
 clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor solución.
@@ -471,7 +614,7 @@ clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor sol
 </ul>
 </details>
 
-#### Pregunta 16[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 16 [[@Bobter](https://github.com/Bobter)]
 
 En el próximo programa, eliminaremos el método **newPayment()** de la interfaz de
 **payment**. Coloca este método en otra interfaz llamada **NewPayment**. Como resultado, ahora
@@ -624,7 +767,7 @@ public class Cliente {
 </ul>
 </details>
 
-#### Pregunta 17[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 17 [[@Bobter](https://github.com/Bobter)]
 
 ¿Cuáles son los cambios clave?
 
@@ -784,7 +927,7 @@ La clase <b>Cliente</b> se nos entregó modificada, los cambios se notan a la ho
 </ul>
 </details>
 
-#### Pregunta 18[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 18 [[@Bobter](https://github.com/Bobter)]
 
 Ten que aquí el enfoque clave estaba en el principio **LSP**, nada más. Podrías
 refactorizar fácilmente el código del cliente usando algún método estático. Por ejemplo realiza
@@ -844,7 +987,7 @@ Procesando el pago actual de guest
 
 ### Principio de segregación de interfaces
 
-#### Pregunta 19
+#### Pregunta 19 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 ¿Por qué un usuario necesita cambiar una clase base (o una interfaz)? Para
 responder a esto, supongamos que deseas mostrar qué el tipo de fax está utilizando en una fase
@@ -870,7 +1013,47 @@ class EFax implements Fax {
 }
 ```
 
-#### Pregunta 20
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Creamos la siguiente jerarquía con las 3 clases que se nos meciona :*LanFax*, *InternetFax (o
+EFax*) y *AnalogFax* .
+
+```java
+interface  Fax {
+    public void sendFax();
+}
+class LanFax implements  Fax{
+    @Override
+    public void sendFax(){
+        System.out.println("Usando lan fax para mandar un fax");
+    }
+}
+class EFax implements  Fax{
+    @Override
+    public void sendFax(){
+        System.out.println("Usando internet fax para mandar un fax");
+    }
+}
+
+class AnalgoFax implements  Fax{
+    @Override
+    public void sendFax(){
+        System.out.println("Usando Analog fax para mandar un fax.");
+    }
+}
+```
+Se crea una interfaz base llamada Fax la cual contiene un método void llamado faxType()
+que posteriormente se usará para que imprima un texto que diga el tipo de fax que corresponde,
+después creamos las 3 clases que heredan de esta interfaz llamados LanFax,EFax y AnalogFax.
+La clase LanFax sobrescribirá el método  faxType() para que imprima el texto "Usando lan fax
+para mandar un fax.", la clase EFax sobrescribirá el mismo método para que imprima "Usando
+internet fax para mandar un fax." Y la clase AnalogFaz  imprimirá el texto "Usando Analog fax para mandar un fax.".
+
+</ul>
+</details>
+
+#### Pregunta 20[[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Para usar esta jerarquía de herencia, una vez que modificas el método **sendFax()** a
 **sendFax(Fax faxType)** en la clase **ImpresoraAvanzada**, exige que cambies la interfaz de
@@ -878,12 +1061,38 @@ Para usar esta jerarquía de herencia, una vez que modificas el método **sendFa
 Cuando actualices **Impresora**, también debes actualizar la clase **impresoraBasica** para
 adaptarse a este cambio. ¡Ahora ves el problema!. Explica el problema.
 
-#### Pregunta 21
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Cuando actualizamos el método sendFax() de la clase ImpresoraAvanzada nos pide modificar la clase
+base Impresora y la clase ImpresoraBásica ,por lo que el problema es que al momento que queríamos
+hacer el cambio en un solo método en la clase ImpresoraAvanzada se pedirá el mismo cambio para la
+clase ImpresoraBásica pero nuestro objetivo no es cambiar esta clase , además esta este tipo de
+impresora no necesita de este cambio porque no puede mandar ningún tipo de fax. Además otro problema
+es que en la clase cliente también se usa el método sendFax() pero no hay ninguna instancia de objeto
+de alguna clase de tipo de fax que se pueda usar como parámetro para este método.
+</ul>
+</details>
+
+#### Pregunta 21[[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Si has entendido correctamente el problema. El **ISP** te sugiere que te ocupes de
 este tipo de escenario. Explica tu respuesta.
 
-#### Pregunta 22[[@Bobter](https://github.com/Bobter)]
+<details>
+  <summary>Respuesta</summary>
+<ul>
+La forma de solucionar este problema sería creando 2 interfaces , una que contenga el
+método printDocument() ,que se usará en todas las impresoras ya sea básica o avanzada,
+y otra que contenga el método sendFax() ,que solo será usada en impresoras avanzadas, de
+esta forma la clase impresoraBásica solo heredaría de la primera interfaz porque solo necesita
+del método printDocument(),mientras que la clase impresoraAvanzada heredaría de ambas interfaces
+porque necesita ambos métodos. 
+</ul>
+</details>
+
+
+#### Pregunta 22 [[@Bobter](https://github.com/Bobter)]
 
 ¿Es conveniente usar e inicializar el siguiente código?
 
@@ -901,7 +1110,7 @@ interface Impresora {
 </ul>
 </details>
 
-#### Pregunta 23[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 23 [[@Bobter](https://github.com/Bobter)]
 
 Si comienzas tu codificación considerando las impresoras avanzadas que pueden
 imprimir y enviar un fax, está bien. Pero en una etapa posterior, si tu programa también
@@ -954,7 +1163,7 @@ nuestro código.
 </ul>
 </details>
 
-#### Pregunta 24[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 24 [[@Bobter](https://github.com/Bobter)]
 
 Comprueba tus respuestas añadiendo dentro de **main()**, el siguiente código
 polimórfico:
@@ -1017,7 +1226,7 @@ La impresora avanzada envía un fax.
 
 </details>
 
-#### Pregunta 25[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 25 [[@Bobter](https://github.com/Bobter)]
 
 Reemplaza el segmento de código
 
@@ -1102,7 +1311,7 @@ Sean los siguientes archivos:
 - **Cliente.java**
 - **JerarquiaFax.java**
 
-#### Pregunta 26[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 26 [[@Bobter](https://github.com/Bobter)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados.
 
@@ -1393,7 +1602,7 @@ El programa es simple, pero ¿Qué tipo de problemas presenta?
 <summary>Respuesta</summary>
 <ul> <li> Para ser un problema simple la dependencia de la clase OracleDatabase para el funcionamiento de la clase InterfazUsuario nos dificulta la modificación del código. </li> </ul> </details>
 
-#### Pregunta 33[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 33 [[@Bobter](https://github.com/Bobter)]
 
 En el programa de la carpeta **SOLID**, para el caso **DIP** verás la siguiente jerarquía:
 
@@ -1453,7 +1662,7 @@ class InterfazUsuario {
 </ul>
 </details>
 
-#### Pregunta 34
+#### Pregunta 34 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Completa todos los archivos siguientes de la sección **SOLID**
 
@@ -1463,6 +1672,7 @@ Completa todos los archivos siguientes de la sección **SOLID**
 - **MySQLDatabase.java**
 - **Cliente.java**
 
+
 Explica los resultados. ¿El programa resuelve todos los posibles problemas del programa que
 no usa **DIP**?
 En resumen, en **OOP**, te sugiero seguir la cita de ***Robert C. Martin***:
@@ -1470,12 +1680,128 @@ En resumen, en **OOP**, te sugiero seguir la cita de ***Robert C. Martin***:
 > ninguna manera. Entonces, cuando tienes una clase base y una clase derivada, tu clase base no debe conocer
 > ninguna de sus clases derivadas."
 
-#### Pregunta 35
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Se usa la interfaz BaseDatos como base para crear las dos clases de base de datos llamadas  MySQLDatabase
+y OracleDatabase .BaseDatos tiene el método  saveEmpIdInDatabase(…) el cual imprime un mensaje con la id
+del usuario anunciando que se guardó su id en la base de datos, también pide de parámetro un string llamado
+empid el cual será la id de usuario , en el caso de la clase MySQLDatabase imprime "El id:  empId  es
+guardado en la base de datos MySQL." y la clase OracleDatabase imprime "El id: empId  es guardado en la
+base de datos Oracle."
+
+```java
+interface BaseDatos {
+    public void saveEmpIdInDatabase(String empId);
+}
+
+class OracleDatabase implements BaseDatos {
+    public void saveEmpIdInDatabase(String empId){
+        System.out.println("El id: " + empId + " es guardado en la base de datos Oracle.");
+    }
+}
+
+class MySQLDatabase implements BaseDatos {
+    public void saveEmpIdInDatabase(String empId){
+        System.out.println("El id: " + empId + " es guardado en la base de datos MySQL.");
+    }
+}
+```
+
+Cuando se instancie un objeto de la clase InterfazUsuario ,al llamar a su constructor guardará una
+referencia a un objeto de la clase BaseDatos, la cual es una interfaz que tiene dos clases que heredan
+de esta las cuales son OracleDatabase y MYSQLDatabase, esto le será útil a la clase InterfazUsuario para
+que pueda hacer referencia a cualquiera de estos dos tipos de base de datos con solo usar la abstracción
+BaseDatos. En el método saveEmployeeId(…) pide de parámetro un string llamado empId para colocarlo como
+parámetro del método saveEmpIdInDatabase(…) de la base de datos guardada.
+
+```java
+class InterfazUsuario {
+  private BaseDatos baseDatos ;
+
+  public InterfazUsuario(BaseDatos baseDatos) {
+      this.baseDatos= baseDatos;
+  }
+  public void saveEmployeeId(String empId) {
+      baseDatos.saveEmpIdInDatabase(empId);
+  }
+}
+```
+Finalmente, en la clase Cliente Creamos un objeto de clase BaseDatos llamado baseDatos y lo igualamos a un
+nuevo objeto de clase OracleDatabase , después creamos un objeto de tipo InterfazUsuario y le colocaremos en
+el parámetro del constructor la base de datos anterior, luego el interfaz de usuario usará el método saveEmployeeId(..)
+con el id E001 lo que hace que imprima “El id: E001 es guardado en la base de datos Oracle”. Después al objeto base
+datos lo igualamos a un nuevo objeto de tipo MySQLDatabase , a la interfaz de usuario la volvemos a crear pero esta vez
+con la nueva base de datos en el parámetro, pero esta vez al usar el método  saveEmployeeId(..) le asignamos el id
+E002 por lo que imprimirá “El id: E002 es guardado en la base de datos MySQL.”
+
+```java
+public class Cliente {
+    public static void main(String[] args) {
+
+        // Usando Oracle
+        BaseDatos baseDatos = new OracleDatabase();
+        InterfazUsuario interfazUsuario = new InterfazUsuario(baseDatos);
+        interfazUsuario.saveEmployeeId("E001");
+        
+        // Usando Mysql
+        baseDatos = new MySQLDatabase();
+        interfazUsuario = new InterfazUsuario(baseDatos);
+        interfazUsuario.saveEmployeeId("E002");
+    }
+}
+```
+al ejecutar el código tendría la sigueinte salida.
+```console
+El id: E001 es guardado en la base de datos Oracle.
+El id: E002 es guardado en la base de datos MySQL.
+```
+</ul>
+</details>
+
+
+
+#### Pregunta 35 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Encuentra alguna excepción a esta sugerencia.
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Una forma de que una clase padre A pueda conocer información de sus  clase hijas es que esta es que la
+clase padre se instancie y este sea un creador de otros objetos de clases hijos y que los almacene en un
+array de objetos de clase A, de esta forma tendría información de objetos de sus clases hijas.
+</ul>
+</details>
 
-#### Pregunta 36
+#### Pregunta 36 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 El constructor de la clase **InterfazUsuario** acepta un parámetro de base de datos.
 Proporciona una instalación adicional a un usuario cuando utiliza tanto el constructor como el
 método setter (**setDatabase**) dentro de esta clase. ¿Cuál es el beneficio?
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Al añadir el método setDatabase(…) nos da el beneficio de evitar volver a crear el mismo
+objeto InterfazUsuario y solo usar este setter para hacer un cambio de tipo de base de datos.
+En la ejecución del programa anterior se tenía que crear la interfaz de usuario al momento de
+cambiar de una base de datos Oracle a una base de datos MySQL, pero ahora en lugar de volver a
+crear la interfaz solo se usaría el método setDataBase(), el codigo de Cliente quedaría algo así.
+
+```java
+public class Cliente {
+    public static void main(String[] args) {
+
+        // Usando Oracle
+        BaseDatos baseDatos = new OracleDatabase();
+        InterfazUsuario interfazUsuario = new InterfazUsuario(baseDatos);
+        interfazUsuario.saveEmployeeId("E001");
+        
+        // Usando Mysql
+        baseDatos = new MySQLDatabase();
+        interfazUsuario.setDataBase(baseDatos);
+        interfazUsuario.saveEmployeeId("E002");
+    }
+}
+```
+</ul>
+</details>
