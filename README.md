@@ -96,7 +96,7 @@ de 5 años de experiencia.
 </ul>
 </details>
 
-#### Pregunta 2[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 2 [[@Bobter](https://github.com/Bobter)]
 
 ¿Cuál es el problema con este diseño y las razones posibles del problema?
 
@@ -206,7 +206,7 @@ alterar las implementadas.
 
 ### [Principio abierto/cerrado](https://es.wikipedia.org/wiki/Principio_de_abierto/cerrado)
 
-#### Pregunta 5[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 5 [[@Bobter](https://github.com/Bobter)]
 
 ¿Por qué no es correcto colocar **displayResult()** y **evaluateDistinction()** en la misma
 clase, como la siguiente?
@@ -603,7 +603,7 @@ processNewPayments() solo ejecutará los métodos newPaymet de las clases que us
 </ul>
 </details>
 
-#### Pregunta 15[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 15 [[@Bobter](https://github.com/Bobter)]
 
 Todo lo anterior Lo más importante es que viola el **OCP** cada vez que modifica una
 clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor solución.
@@ -614,7 +614,7 @@ clase existente que usa esta cadena *if-else*. Entonces, busquemos una mejor sol
 </ul>
 </details>
 
-#### Pregunta 16[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 16 [[@Bobter](https://github.com/Bobter)]
 
 En el próximo programa, eliminaremos el método **newPayment()** de la interfaz de
 **payment**. Coloca este método en otra interfaz llamada **NewPayment**. Como resultado, ahora
@@ -767,7 +767,7 @@ public class Cliente {
 </ul>
 </details>
 
-#### Pregunta 17[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 17 [[@Bobter](https://github.com/Bobter)]
 
 ¿Cuáles son los cambios clave?
 
@@ -927,7 +927,7 @@ La clase <b>Cliente</b> se nos entregó modificada, los cambios se notan a la ho
 </ul>
 </details>
 
-#### Pregunta 18[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 18 [[@Bobter](https://github.com/Bobter)]
 
 Ten que aquí el enfoque clave estaba en el principio **LSP**, nada más. Podrías
 refactorizar fácilmente el código del cliente usando algún método estático. Por ejemplo realiza
@@ -1092,7 +1092,7 @@ porque necesita ambos métodos.
 </details>
 
 
-#### Pregunta 22[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 22 [[@Bobter](https://github.com/Bobter)]
 
 ¿Es conveniente usar e inicializar el siguiente código?
 
@@ -1110,7 +1110,7 @@ interface Impresora {
 </ul>
 </details>
 
-#### Pregunta 23[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 23 [[@Bobter](https://github.com/Bobter)]
 
 Si comienzas tu codificación considerando las impresoras avanzadas que pueden
 imprimir y enviar un fax, está bien. Pero en una etapa posterior, si tu programa también
@@ -1163,7 +1163,7 @@ nuestro código.
 </ul>
 </details>
 
-#### Pregunta 24[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 24 [[@Bobter](https://github.com/Bobter)]
 
 Comprueba tus respuestas añadiendo dentro de **main()**, el siguiente código
 polimórfico:
@@ -1226,7 +1226,7 @@ La impresora avanzada envía un fax.
 
 </details>
 
-#### Pregunta 25[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 25 [[@Bobter](https://github.com/Bobter)]
 
 Reemplaza el segmento de código
 
@@ -1311,7 +1311,7 @@ Sean los siguientes archivos:
 - **Cliente.java**
 - **JerarquiaFax.java**
 
-#### Pregunta 26[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 26 [[@Bobter](https://github.com/Bobter)]
 
 Muestra la salida y explica los resultados en función de los métodos entregados.
 
@@ -1481,7 +1481,7 @@ El programa es simple, pero ¿Qué tipo de problemas presenta?
 <summary>Respuesta</summary>
 <ul> <li> Para ser un problema simple la dependencia de la clase OracleDatabase para el funcionamiento de la clase InterfazUsuario nos dificulta la modificación del código. </li> </ul> </details>
 
-#### Pregunta 33[[@Bobter](https://github.com/Bobter)]
+#### Pregunta 33 [[@Bobter](https://github.com/Bobter)]
 
 En el programa de la carpeta **SOLID**, para el caso **DIP** verás la siguiente jerarquía:
 
