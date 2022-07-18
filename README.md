@@ -1541,7 +1541,7 @@ class InterfazUsuario {
 </ul>
 </details>
 
-#### Pregunta 34
+#### Pregunta 34 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 Completa todos los archivos siguientes de la sección **SOLID**
 
@@ -1644,7 +1644,7 @@ El id: E002 es guardado en la base de datos MySQL.
 
 Encuentra alguna excepción a esta sugerencia.
 
-#### Pregunta 36
+#### Pregunta 36 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
 El constructor de la clase **InterfazUsuario** acepta un parámetro de base de datos.
 Proporciona una instalación adicional a un usuario cuando utiliza tanto el constructor como el
