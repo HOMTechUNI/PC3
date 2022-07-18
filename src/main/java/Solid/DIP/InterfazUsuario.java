@@ -1,7 +1,7 @@
 package Solid.DIP;
-/*
+
 class InterfazUsuario {
-  private BaseDatos baseDatos;
+  private BaseDatos baseDatos ;
 
   public InterfazUsuario(BaseDatos baseDatos) {
       this.baseDatos= baseDatos;
@@ -10,4 +10,3 @@ class InterfazUsuario {
       baseDatos.saveEmpIdInDatabase(empId);
   }
 }
-*/

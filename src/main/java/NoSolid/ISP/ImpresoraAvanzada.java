@@ -6,7 +6,7 @@ public class ImpresoraAvanzada implements Impresora, Fax {
         System.out.println("La impresora avanzada imprime un documento.");
     }
 
-    public void sendFax(Fax typeFax) {
+    public void sendFax() {
         System.out.println("La impresora avanzada envía un fax.");
     }
 }
