@@ -991,7 +991,7 @@ Efectivamente en los 2 casos se obtienen errores y no se ejecuta correctamente e
 ```java
 class Cliente {
     public static void main(String[] args) {
-        System.out.println("Demostracion sin ISP");
+        System.out.println("Demostracion con ISP");
 
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
@@ -1009,7 +1009,7 @@ tendríamos el problema que no se podría usar el método <b>sendFax()</b>.
 De esta forma ya obtendríamos una salida correcta:
 
 ```console
-Demostración sin ISP
+Demostración con ISP
 La impresora básica imprime un documento.
 La impresora avanzada imprime un documento.
 La impresora avanzada envía un fax.
@@ -1050,7 +1050,7 @@ Para esto también se tuvo que modificar el código anterior de la clase <b>Clie
 ```java
     class Cliente {
     public static void main(String[] args) {
-        System.out.println("Demostracion sin ISP");
+        System.out.println("Demostracion con ISP");
 
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
@@ -1069,7 +1069,7 @@ Para esto también se tuvo que modificar el código anterior de la clase <b>Clie
 ```java
 class Cliente {
     public static void main(String[] args) {
-        System.out.println("Demostracion sin ISP");
+        System.out.println("Demostracion con ISP");
 
         List<Impresora> impresoraList = new ArrayList<Impresora>();
 
@@ -1086,7 +1086,7 @@ class Cliente {
 Obteniendo la siguiente salida:
 
 ```console
-Demostracion sin ISP
+Demostracion con ISP
 La impresora basica imprime un documento.
 La impresora avanzada imprime un documento.
 ```
@@ -1113,7 +1113,7 @@ Salida de
 ```java
     class Cliente {
     public static void main(String[] args) {
-        System.out.println("Demostracion sin ISP");
+        System.out.println("Demostracion con ISP");
 
         Impresora impresora = new ImpresoraBasica();
         impresora.printDocument();
@@ -1128,7 +1128,7 @@ Salida de
 ```
 
 ```console
-Demostración sin ISP
+Demostración con ISP
 La impresora básica imprime un documento.
 La impresora avanzada imprime un documento.
 La impresora avanzada envía un fax.
