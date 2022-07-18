@@ -1643,6 +1643,14 @@ El id: E002 es guardado en la base de datos MySQL.
 #### Pregunta 35
 
 Encuentra alguna excepción a esta sugerencia.
+<details>
+  <summary>Respuesta</summary>
+<ul>
+Una forma de que una clase padre A pueda conocer información de sus  clase hijas es que esta es que la
+clase padre se instancie y este sea un creador de otros objetos de clases hijos y que los almacene en un
+array de objetos de clase A, de esta forma tendría información de objetos de sus clases hijas.
+</ul>
+</details>
 
 #### Pregunta 36 [[@MiguelHRLX](https://github.com/MiguelHRLX)]
 
